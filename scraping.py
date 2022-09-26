@@ -31,7 +31,8 @@ def get_page_source(url):
 
 def get_recipes_from_google_url(search, num_recipes=30):
     """
-    Gets recipes from a given google search 
+    Gets recipes from a given search query, specified num recipes
+    (not guaranteed due to some captured recipes not being parseable)
     """
     query = urllib.parse.quote_plus(search)
     response = get_page_source("https://www.google.com/search?q=" + query)
@@ -53,6 +54,9 @@ def get_recipes_from_google_url(search, num_recipes=30):
     return links
 
 def get_recipe_from_url(url):
+    """
+    Scrapes a recipe url.
+    """
     
     try:
         recipe = scrape_me(url)
@@ -63,7 +67,6 @@ def get_recipe_from_url(url):
     
     #print(recipe.title(), recipe.ingredients())
     return recipe
-
 
 def main():
     queries = [
@@ -82,16 +85,20 @@ def main():
     ]
 
     searches = {}
+    #searches2 = {} 
     for q in queries:
         query = q + " cookies"
-        #searches[query] = []
+        query2 = q + " cookies recipe"#this was used to get a few more recipes
+        searches[query] = []
         url_list = get_recipes_from_google_url(query)
+        #url_list_2 = get_recipes_from_google_url(query2)
         #print(url_list)
         searches[query] = url_list
+        #searches2[query2] = url_list_2
     
     curr_path = Path(__file__).parent.resolve()
     #print("searches are", searches)
-    for links in searches.values():
+    for links in searches2.values():
         count = 0
         for link in links:
             count += 1
@@ -108,6 +115,13 @@ def main():
             except:
                 print("general error ")
             
+def capture_ingredients_and_quantities(filename):
+    f = open(filename, "r")
+    nxt = f.readline()
+    while nxt:
+        print(nxt)
+        nxt = f.readline()
+        #regex into number, unit/ingredient
 
 
 if __name__ == "__main__":
