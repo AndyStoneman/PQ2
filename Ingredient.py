@@ -20,7 +20,8 @@ class Ingredient:
 
     def __repr__(self):
         """Lets us make an object of the same value."""
-        return "Ingredient('{0}', {1})".format(self.name, self.amount)
+        return "Ingredient('{0}', {1}, '{2}')".format(self.name, self.amount, 
+        self.unit)
 
     def set_amount(self, new_amount):
         self.amount = new_amount
