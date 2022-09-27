@@ -1,1 +1,9 @@
-['½ cup shortening', '½ cup crunchy peanut butter', '½ cup white sugar', '½ cup packed brown sugar', '1 large egg', '1 ¼ cups all-purpose flour', '¾ teaspoon baking soda', '½ teaspoon baking powder', '¼ teaspoon salt']
+0.5,cup,shortening
+0.5,cup,crunchy peanut butter
+0.5,cup,white sugar
+0.5,cup,packed brown sugar
+1,large,egg
+1.25,cup,all-purpose flour
+0.75,tsp,baking soda
+0.5,tsp,baking powder
+0.25,tsp,salt
