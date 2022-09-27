@@ -1,1 +1,6 @@
-['2 1/2 c. all-purpose flour', '1 tsp. kosher salt', '1 c. (2 sticks) unsalted butter, room temperature', '2/3 c. granulated sugar', '1 large egg, plus 1 large egg yolk for brushing', '1 tsp. pure vanilla extract,or almond extract (optional)']
+2.5,cup,all-purpose flour
+1,tsp,kosher salt
+1,cup,unsalted butter
+0.666,cup,granulated sugar
+1,large,egg
+1,tsp,pure vanilla extract
