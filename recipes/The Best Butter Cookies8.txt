@@ -1,1 +1,8 @@
-["2 cups all-purpose flour (see Cook's Note)", '1/2 teaspoon baking powder', '1/2 teaspoon kosher salt', '2 sticks (16 tablespoons) good-quality unsalted butter, at room temperature', '3/4 cup granulated sugar', '1 large egg yolk', '1 teaspoon pure vanilla extract', '1/4 cup turbinado sugar']
+['2, cups, all-purpose flour',
+'0.5, tsp, baking powder',
+'0.5, tsp, kosher salt',
+'16, tbsp, unsalted butter',
+'.75, cup, granulated sugar',
+'1, large, egg',
+'1, tsp, vanilla extract',
+'.25, cup, turbinado sugar']

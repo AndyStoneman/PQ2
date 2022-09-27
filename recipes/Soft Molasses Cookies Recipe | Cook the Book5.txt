@@ -1,1 +1,10 @@
-['1 cup (2 sticks , 8 ounces) unsalted butter', '1 cup (7 ounces) sugar, plus more for coating the dough', '1/2 cup (6 ounces) molasses', '2 1/4 teaspoons baking soda', '1 teaspoon salt', '1 1/4 teaspoons cinnamon', '1 1/4 teaspoons ground cloves', '3/4 teaspoons ground ginger', '2 large eggs', '3 1/2 cups (14 3/4 ounces) unbleached all-purpose flour']
+['1, cup, unsalted butter',
+'1, cup, sugar',
+'0.5, cup, molasses',
+'2.25, tsp, baking soda',
+'1, tsp, salt',
+'1.25, tsp, cinnamon',
+'1.25, tsp, ground cloves',
+'0.75, tsp, ground ginger',
+'2, large, eggs',
+'3.5, cups, all-purpose flour']
