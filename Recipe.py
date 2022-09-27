@@ -55,7 +55,20 @@ class Recipe:
             self.name = name
             
         self.fitness = len(self.ingredients)
+    
+    def parse_file_for_recipe(line):
+        """
+        Parses line input into recipe 
+        """
+        #remove [] from list
+        line = line[1:len(line)-1]
+        ing_list = line.split('\',')
+        for i in range(len(ing_list)):
+            ing_list[i] = ing_list[i][1:]
+        print(ing_list)
+        
 
+    
     def get_fitness(self):
         """
         A getter method for fitness of a recipe

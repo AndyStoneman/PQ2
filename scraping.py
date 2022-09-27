@@ -9,8 +9,6 @@ from requests_html import HTMLSession
 from recipe_scrapers import scrape_me
 #https://practicaldatascience.co.uk/data-science/how-to-scrape-google-search-results-using-python
 
-
-
 def get_page_source(url):
     """Return the source code for the provided URL. 
     This code comes directly from Practical Data Science
@@ -68,6 +66,7 @@ def get_recipe_from_url(url):
     #print(recipe.title(), recipe.ingredients())
     return recipe
 
+
 def main():
     queries = [
     "snickerdoodle",
@@ -98,7 +97,7 @@ def main():
     
     curr_path = Path(__file__).parent.resolve()
     #print("searches are", searches)
-    for links in searches2.values():
+    for links in searches.values():
         count = 0
         for link in links:
             count += 1
@@ -115,13 +114,7 @@ def main():
             except:
                 print("general error ")
             
-def capture_ingredients_and_quantities(filename):
-    f = open(filename, "r")
-    nxt = f.readline()
-    while nxt:
-        print(nxt)
-        nxt = f.readline()
-        #regex into number, unit/ingredient
+
 
 
 if __name__ == "__main__":
