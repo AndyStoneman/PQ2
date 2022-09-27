@@ -1,1 +1,8 @@
-['1 and 1/2 cups (188g) all-purpose flour (spoon & leveled)', '1 and 1/2 teaspoons baking powder', '1/4 teaspoon salt', '1/2 cup (115g) unsalted butter, softened to room temperature', '3/4 cup (150g) granulated sugar', '1 large egg, at room temperature', '1 teaspoon pure vanilla extract', '1/2 cup (80g) sprinkles, plus more for topping*']
+1.5,cup,all-purpose flour 
+1.5,tsp,baking powder
+0.25,tsp,salt
+0.5,cup,unsalted butter
+0.75,cup,granulated sugar
+1,large,egg
+1,tsp,pure vanilla extract,
+0.5,cup,sprinkles
