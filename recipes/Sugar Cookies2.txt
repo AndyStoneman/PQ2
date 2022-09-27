@@ -1,1 +1,8 @@
-['3 cups all-purpose flour', '3/4 teaspoon baking powder', '1/4 teaspoon salt', '1 cup unsalted butter, softened', '1 cup sugar', '1 egg, beaten', '1 tablespoon milk', 'Powdered sugar, for rolling out dough']
+['3, cups, all-purpose flour',
+'0.75, tsp, baking powder',
+'.25, tsp, salt',
+'1, cup, unsalted butter',
+'1, cup, sugar',
+'1, egg, beaten',
+'1, tbsp, milk',
+'0, lol, Powdered sugar']

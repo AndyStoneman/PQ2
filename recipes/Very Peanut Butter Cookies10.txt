@@ -1,1 +1,12 @@
-['2 and 1/2 cups (313g) all-purpose flour (spoon & leveled)', '1 teaspoon baking powder', '1 teaspoon baking soda', '1/2 teaspoon salt', '1 cup (230g; 2 sticks) unsalted butter, softened to room temperature', '1 cup (200g) granulated sugar', '3/4 cup (150g) packed light or dark brown sugar', '2 large eggs, at room temperature', '2 cups (500g) creamy peanut butter*', '1 and 1/2 teaspoons pure vanilla extract', '1/2 cup (100g) granulated sugar for rolling', 'optional: 1/2 cup (65g) finely chopped peanuts']
+['2.5, cups, all-purpose flour',
+'1, teaspoon, baking powder',
+'1, teaspoon, baking soda',
+'.5, teaspoon, salt',
+'1, cup, unsalted butter, ',
+'1, cup, granulated sugar',
+'.75, cup, packed light brown sugar',
+'2, large, eggs',
+'2, cups, creamy peanut butter',
+'1.5, tsp, vanilla extract',
+'.5, cup, granulated sugar',
+'.5, cup, chopped peanuts']

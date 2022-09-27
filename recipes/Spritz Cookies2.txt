@@ -1,1 +1,12 @@
-['1 c. unsalted butter, softened', '2/3 c. granulated sugar', '1 large egg, at room temperature', '2 tsp. vanilla extract', '1/2 tsp. kosher salt', '1/4 tsp. almond extract', '2 1/2 c. all-purpose flour', '1/2 c. semi-sweet chocolate chips, melted', '1/2 c. white chocolate chips, melted', 'Sparkling sugar', 'Finely shredded coconut', 'Christmas sprinkles, such as red, white and green nonpareils']
+['1 cup, unsalted butter',
+'.66 cup, granulated sugar',
+'1, large, egg',
+'2 tsp, vanilla extract',
+'.5 tsp, kosher salt',
+'.25 tsp, almond extract',
+'2.5, cup, all-purpose flour',
+'0.5, cup, semi-sweet chocolate chips melted',
+'0.5, cup, white chocolate chips melted',
+'0, lol, Sparkling sugar',
+'0, lol, Finely shredded coconut',
+'0, lol, Christmas sprinkles, such as red, white and green nonpareils']

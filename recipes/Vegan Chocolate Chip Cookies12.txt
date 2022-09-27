@@ -1,1 +1,10 @@
-['2/3 cup refined coconut oil, melted', '2/3 cup organic granulated sugar', '2/3 cup packed organic brown sugar', '1/2 cup unsweetened vanilla almond milk', '2 teaspoons vanilla', '2 1/2 cups all-purpose flour', '1 teaspoon baking soda', '1 teaspoon baking powder', '1/2 teaspoon salt', '1 bag (10 oz) vegan semisweet chocolate chips (1 1/2 cups)']
+['.66, cup, coconut oil',
+'.66, cup, granulated sugar',
+'.66, cup, packed brown sugar',
+'.5, cup, unsweetened vanilla almond milk',
+'2, tsp, vanilla',
+'2.5, cups, all-purpose flour',
+'1, teaspoon, baking soda',
+'1, teaspoon, baking powder',
+'.5, teaspoon, salt',
+'1.5, cup, semisweet chocolate chips']
