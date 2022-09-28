@@ -1,1 +1,4 @@
-['2 cups butter, softened', '1 cup white sugar', '2 teaspoons vanilla extract', '4 cups all-purpose flour']
+2,cups,butter
+1,cups,white sugar 
+2,tsp,vanilla extract
+4,cups,all-purpose flour

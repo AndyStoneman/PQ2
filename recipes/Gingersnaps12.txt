@@ -1,1 +1,12 @@
-['3/4 cup (138g) vegetable shortening*', '1 cup (198g) granulated sugar', '1/2 teaspoon salt', '2 teaspoons baking soda', '1 large egg', '1/3 cup (113g) molasses', '2 1/3 cups (280g) King Arthur Unbleached All-Purpose Flour', '1 to 2 teaspoons ginger', '1/2 teaspoon cloves', '1 teaspoon cinnamon', '1/4 cup (50g) granulated sugar', '1 teaspoon cinnamon']
+0.75,cups,vegetable shortening
+1,cups,granulated sugar
+0.5,tsp,salt
+2,tsp,baking soda
+1,large,egg
+0.33,cups,molasses
+2.33,cups,Unbleached All-Purpose Flour
+2,tsp,ginger
+0.5,tsp,cloves
+1,tsp,cinnamon 
+0.25,cups,granulated sugar
+1,tsp,cinnamon

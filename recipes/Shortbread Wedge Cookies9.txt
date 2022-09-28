@@ -1,1 +1,6 @@
-['1 cup (2 sticks; 230g) unsalted butter, softened to room temperature', '2/3 cup (135g) granulated sugar', '1 and 1/2 teaspoons pure vanilla extract', '1/2 teaspoon salt', '2 cups (250g) all-purpose flour (spoon & leveled)', '1/4 cup (28g) cornstarch', 'optional: coarse sparkling sugar']
+1,cup,unsalted butter
+0.66,cup,granulated sugar
+1.5,tsp,pure vanilla extract
+0.5,tsp,salt
+2,cups,all-purpose flour
+0.25,cups,cornstarch

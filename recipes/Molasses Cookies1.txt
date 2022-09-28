@@ -1,1 +1,10 @@
-['1 ½ cups white sugar, divided', '¾ cup margarine, melted', '1 egg', '¼ cup molasses', '2 cups all-purpose flour', '2 teaspoons baking soda', '1 teaspoon ground cinnamon', '½ teaspoon salt', '½ teaspoon ground cloves', '½ teaspoon ground ginger']
+1.5,cups,white sugar
+0.75,cups,margarine
+1,large,egg
+0.25,cups,molasses
+2,cups,all-purpose flour
+2,tsp,baking soda
+1,tsp,ground cinnamon
+0.5,tsp,salt
+0.5,tsp,ground cloves
+0.5,tsp,ground ginger

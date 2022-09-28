@@ -1,1 +1,4 @@
-['1 cup peanut butter', '1 cup white sugar', '1 egg', '1 teaspoon baking soda']
+1,cups,peanut butter
+1,cups,white sugar
+1,large,egg
+1,tsp,baking soda

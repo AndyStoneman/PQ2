@@ -1,1 +1,8 @@
-['1 cup sugar, 1/4 cup additional to roll cookies', '1 stick butter, at room temperature', '1 egg', '1 cup smooth peanut butter', '1 teaspoon vanilla', '1/2 teaspoon salt', '1/2 teaspoon baking soda', '1 1/2 cups flour']
+1,cups,sugar
+0.5,cups,butter
+1,large,egg
+1,cups,smooth peanut butter
+1,tsp,vanilla
+0.5,tsp,salt
+0.5,tsp,baking soda
+1.5,cups,flour
