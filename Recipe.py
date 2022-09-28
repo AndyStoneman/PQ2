@@ -1,5 +1,6 @@
 from Ingredient import Ingredient
 import re
+import glob
 
 class Recipe:
     """
@@ -87,15 +88,6 @@ class Recipe:
         return None
 
 
-            
-        #remove [] from list
-        line = line[1:len(line)-1]
-        ing_list = line.split('\',')
-        for i in range(len(ing_list)):
-            ing_list[i] = ing_list[i][1:]
-        print(ing_list)
-        
-
     
     def get_fitness(self):
         """
@@ -171,12 +163,10 @@ class Recipe:
 
 # FOR TESTING (commented out)
 
-"""
-def main():
-    r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
-    r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
-    print(r)
-    print(r2)
 
-main()
-"""
+    
+    #r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
+    #r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
+    #print(r)
+    #print(r2)
+
