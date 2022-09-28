@@ -266,7 +266,7 @@ class GeneticAlgorithm:
 
 """
 def main():
-    ##FOr testing!!
+    ##FOr testing!
     ga = GeneticAlgorithm(1, [])
     # print("x")
     
