@@ -1,5 +1,5 @@
 from Ingredient import Ingredient
-
+import re
 
 class Recipe:
     """
@@ -40,12 +40,14 @@ class Recipe:
             my_line = f.readline()
             #may need to convert from one line to 
             while my_line:
-                #add a call to a separate function to parse recipes ingredients
-                #split by ' ', from the array stuff 
-                ingredient_line = my_line.split(" oz ")
-                ingredient_object = Ingredient(ingredient_line[1].strip(), float(ingredient_line[0].strip()))
-                self.ingredient_names.append(ingredient_line[1].strip())
-                self.ingredients.append(ingredient_object)
+                if my_line[0] == "[" or my_line[0] == '\'':
+                    ingredient = self.parse_line_for_recipe(my_line, "not_csv")
+                else:
+                    ingredient = self.parse_line_for_recipe(my_line, "csv")
+                
+                if ingredient != None:
+                    self.ingredient_names.append(ingredient.get_name())
+                    self.ingredients.append(ingredient)
                 my_line = f.readline()
             f.close()
         else:
@@ -56,10 +58,36 @@ class Recipe:
             
         self.fitness = len(self.ingredients)
     
-    def parse_file_for_recipe(line):
+    def parse_line_for_recipe(self,line, formatting='csv'):
         """
-        Parses line input into recipe 
+        Parses line input into ingredient obj
+        Returns ingredient if parseable, None if empty string passed.
+        Two modes, csv for csv formatted files and other for the way Andy did it.
         """
+
+        ingredient_list = ""
+        if formatting == 'csv':
+            ingredient = line.split(",")
+            # format ingredient as name, amount, unit
+            ingredient = Ingredient(str(ingredient[2]), float(ingredient[0]),\
+                 str(ingredient[1]))
+            return ingredient
+        else:
+            #regex sub out ' single quotes and [ ]
+            line = re.sub("\'", "",line)
+            line = re.sub("\[", "", line)
+            line = re.sub("\]", "", line)
+            ingredient = line.split(",")
+            for i in range(len(ingredient)):
+                ingredient[i] = ingredient[i].strip()
+            if line != "":
+                ingredient = Ingredient(str(ingredient[2]), float(ingredient[0]),\
+                 str(ingredient[1]))
+                return ingredient 
+        return None
+
+
+            
         #remove [] from list
         line = line[1:len(line)-1]
         ing_list = line.split('\',')
@@ -140,3 +168,15 @@ class Recipe:
     def __repr__(self):
         """Returns a blueprint for a Recipe object."""
         return "Recipe('{0}', {1}, {2})\n".format(self.name, self.ingredients, self.filename)
+
+# FOR TESTING (commented out)
+
+"""
+def main():
+    r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
+    r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
+    print(r)
+    print(r2)
+
+main()
+"""
