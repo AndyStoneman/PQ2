@@ -1,1 +1,6 @@
-['3/4 pound unsalted butter, at room temperature', '1 cup sugar, plus extra for sprinkling', '1 teaspoon pure vanilla extract', '3 1/2 cups all-purpose flour', '1/4 teaspoon salt', '6 to 7 ounces very good semisweet chocolate, finely chopped']
+1.5,cups,unsalted butter
+1,cups,sugar
+1,tsp,pure vanilla extract
+3.5,cups,all-purpose flour
+0.25,tsp,salt
+6,oz,finely chopped semisweet chocolate

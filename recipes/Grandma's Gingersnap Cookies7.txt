@@ -1,1 +1,10 @@
-['⅓ cup cinnamon sugar', '2 cups sifted all-purpose flour', '1 tablespoon ground ginger', '2 teaspoons baking soda', '1 teaspoon ground cinnamon', '½ teaspoon salt', '¾ cup shortening', '1 cup white sugar', '1 large egg', '¼ cup dark molasses']
+0.33,cups,cinnamon sugar
+2,cups,all-purpose flour
+1,tbsp,ground ginger
+2,tsp,baking soda
+1,tsp,ground cinnamon
+0.5,tsp,salt 
+0.75,cups,shortening
+1,cups,white sugar
+1,large,egg 
+0.25,cups,dark molasses

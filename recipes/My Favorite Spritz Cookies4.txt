@@ -1,1 +1,7 @@
-['1 cup (2 sticks; 230g) unsalted butter, softened to room temperature', '3/4 cup (150g) granulated sugar', '1 large egg, at room temperature', '1 teaspoon pure vanilla extract', '1 teaspoon almond extract', '2 and 1/4 cups (281g) all-purpose flour (spoon & leveled)', '1/2 teaspoon salt', 'optional: gel food coloring, sprinkles, chocolate chips, and melted chocolate for decorating']
+1,cups,unsalted butter
+0.75,cups,granulated sugar
+1,large,egg
+1,tsp,pure vanilla extract
+1,tsp,almond extract
+2.25,cups,all-purpose flour
+0.5,tsp,salt 
