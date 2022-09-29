@@ -1,1 +1,9 @@
-['2 cups white sugar', '1 ¼ cups margarine, softened', '2 large eggs', '2 teaspoons vanilla extract', '2 cups all-purpose flour', '¾ cup unsweetened cocoa powder', '1 teaspoon baking soda', '⅛ teaspoon salt', '1 cup chopped walnuts']
+2,cups,white sugar
+1.25,cups,margarine 
+2,large,eggs
+2,tsp,vanilla extract
+2,cups,all-purpose flour
+0.75,cup,unsweetened cocoa powder
+1,tsp baking soda
+0.125,tsp,salt
+1,cup,chopped walnuts

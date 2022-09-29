@@ -246,7 +246,7 @@ class GeneticAlgorithm:
     def load_recipe_list_from_file(self,filename):
         """
         Loads a recipe list from file using pickle.
-        Also isnpired by https://stackoverflow.com/questions/20716812/saving-and-loading-multiple-objects-in-pickle-file. 
+        Also inspired by https://stackoverflow.com/questions/20716812/saving-and-loading-multiple-objects-in-pickle-file. 
         """
         with open(filename, "rb") as f:
             recipe_list = pickle.load(f)

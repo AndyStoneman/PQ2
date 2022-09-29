@@ -1,1 +1,11 @@
-['1 cup butter, softened', '1 cup packed brown sugar', '1/2 cup sugar', '2 large eggs, room temperature', '3 teaspoons vanilla extract', '2-1/2 cups all-purpose flour', '3/4 teaspoon baking powder', '2 cups halved pretzel sticks', '1 cup coarsely chopped dry roasted peanuts', '1 cup semisweet chocolate chunks', '1 cup raisins']
+1,cup,butter
+1,cup,brown sugar
+0.50,cup,sugar
+2,large,eggs
+3,tsp,vanilla extract
+2.50,cups,all-purpose flour
+0.75,tsp,baking powder
+2,cups,halved pretzel sticks 
+1,cup,chopped dry roasted peanuts
+1,cup,semisweet chocolate chunks
+1,cup,raisins

@@ -162,11 +162,9 @@ class Recipe:
         return "Recipe('{0}', {1}, {2})\n".format(self.name, self.ingredients, self.filename)
 
 # FOR TESTING (commented out)
-
-
     
-    #r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
-    #r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
-    #print(r)
-    #print(r2)
+r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
+r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
+print(r)
+print(r2)
 
