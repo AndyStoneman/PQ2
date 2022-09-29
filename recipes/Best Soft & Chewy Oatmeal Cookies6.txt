@@ -4,7 +4,7 @@
 0.50,tsp,sea salt
 0.50,tsp,ground cinnamon
 0.50,cup,salted butter
-0.50,cup granulated sugar
+0.50,cup, granulated sugar
 0.50,cup,light brown sugar packed
 1,large,egg
 1,tsp,pure vanilla extract

@@ -9,4 +9,4 @@
 0.25,cup,dark molasses
 1,large,egg
 1,tsp,pure vanilla extract
-2/3,cup,coarse sugar
+0.66,cup,coarse sugar

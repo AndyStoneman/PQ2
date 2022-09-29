@@ -37,12 +37,15 @@ class GeneticAlgorithm:
         self.recipes = []
         self.inspiring_set_ingredient_names = set()
         #allow for passing null [] recipe list to create inspiring set
-        if input_recipes != []:
-            for filename in glob.glob(input_recipes + "/*.txt"):
-                recipe = Recipe(filename=filename)
-                self.recipes.append(recipe)
-                self.inspiring_set_ingredient_names.update(recipe.get_ingredient_names())
-            self.inspiring_set_ingredient_length = len(list(self.inspiring_set_ingredient_names))
+
+        for filename in glob.glob(input_recipes):
+            recipe = Recipe(filename=filename)
+            self.recipes.append(recipe)
+            self.inspiring_set_ingredient_names.update(recipe.get_ingredient_names())
+        self.inspiring_set_ingredient_length = len(list(self.inspiring_set_ingredient_names))
+
+    def generate_random(self):
+        return random.choice(self.recipes)
 
     def run(self):
         """
@@ -264,27 +267,29 @@ class GeneticAlgorithm:
         """Returns a blueprint for a GeneticAlgorithm object."""
         return "GeneticAlgorithm('{0}', {1})".format(self.iterations, self.recipes)
 
-"""
+
 def main():
-    ##FOr testing!
-    ga = GeneticAlgorithm(1, [])
-    # print("x")
-    
-    
-    # all_recipes = []
-    # files = glob.glob("recipes/" + "*.txt")
-    # print(files)
-    # for i in range(len(files)):
-    #     print(files[i])
-    #     try:
-    #         r = Recipe(files[i][8:len(files[i])-4], [], files[i])
-    #         all_recipes.append(r)
-    #     except:
-    #         continue
+    #For testing!
+    ga = GeneticAlgorithm(1, "recipes/" + "*.txt")
+    #print("x")
+
+    '''
+    all_recipes = []
+    files = glob.glob("recipes/" + "*.txt")
+    #print(files)
+    for i in range(len(files)):
+        #print(files[i])
+        try:
+            r = Recipe(files[i][8:len(files[i])-4], [], files[i])
+            all_recipes.append(r)
+        except:
+            continue
     
     # ga.save_recipe_to_file(all_recipes, "recipe_objects_inspiring.pickle")
-    print("unpickle")
-    print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
+    #print("unpickle")
+    #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
+    '''
+
+    print(ga.generate_random())
 
 main()
-"""

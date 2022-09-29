@@ -59,7 +59,7 @@ class Recipe:
             
         self.fitness = len(self.ingredients)
     
-    def parse_line_for_recipe(self,line, formatting='csv'):
+    def parse_line_for_recipe(self, line, formatting='csv'):
         """
         Parses line input into ingredient obj
         Returns ingredient if parseable, None if empty string passed.
@@ -68,10 +68,10 @@ class Recipe:
 
         ingredient_list = ""
         if formatting == 'csv':
-            ingredient = line.split(",")
+            ingred = line.split(",")
             # format ingredient as name, amount, unit
-            ingredient = Ingredient(str(ingredient[2]), float(ingredient[0]),\
-                 str(ingredient[1]))
+            ingredient = Ingredient(str(ingred[2]), float(ingred[0]),
+                 str(ingred[1]))
             return ingredient
         else:
             #regex sub out ' single quotes and [ ]
@@ -82,7 +82,7 @@ class Recipe:
             for i in range(len(ingredient)):
                 ingredient[i] = ingredient[i].strip()
             if line != "":
-                ingredient = Ingredient(str(ingredient[2]), float(ingredient[0]),\
+                ingredient = Ingredient(str(ingredient[2]), float(ingredient[0]),
                  str(ingredient[1]))
                 return ingredient 
         return None
@@ -163,8 +163,8 @@ class Recipe:
 
 # FOR TESTING (commented out)
     
-r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
-r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
-print(r)
-print(r2)
+#r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
+#r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
+#print(r)
+#print(r2)
 
