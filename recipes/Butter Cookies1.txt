@@ -1,1 +1,6 @@
-['1 cup butter', '1 cup white sugar', '1 egg', '2 teaspoons vanilla extract', '2 ⅔ cups all-purpose flour', '¼ teaspoon salt']
+1,cup,butter
+1,cup,white sugar
+1,large,egg 
+2,tsp,vanilla extract
+2.666,cups,all-purpose flour 
+0.25,tsp,salt

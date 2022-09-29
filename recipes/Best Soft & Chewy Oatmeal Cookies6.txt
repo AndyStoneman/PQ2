@@ -1,1 +1,12 @@
-['▢ 1 cup all-purpose flour', '▢ ½ tsp baking soda', '▢ ¼ tsp baking powder', '▢ ½ tsp fine sea salt', '▢ ½ tsp ground cinnamon', '▢ ½ cup salted butter softened', '▢ ½ cup granulated sugar', '▢ ½ cup light brown sugar packed', '▢ 1 egg', '▢ 1 tsp pure vanilla extract', '▢ 1 ½ cup old-fashioned oatmeal', '▢ 1 cup mix-ins (optional) chocolate chips, raisins, cinnamon chips, etc.']
+1,cup,all-purpose flour
+0.5,tsp,baking soda
+0.25,tsp,baking powder
+0.50,tsp,sea salt
+0.50,tsp,ground cinnamon
+0.50,cup,salted butter
+0.50,cup granulated sugar
+0.50,cup,light brown sugar packed
+1,large,egg
+1,tsp,pure vanilla extract
+1.50,cup,old-fashioned oatmeal
+1,cup,chocolate chips

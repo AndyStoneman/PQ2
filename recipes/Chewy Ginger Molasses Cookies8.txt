@@ -1,1 +1,11 @@
-['1 1/2 cups unsalted butter, softened to room temperature (not melted*)', '1 cup granulated (white) sugar', '1 cup packed brown sugar', '1/2 cup unsulphured molasses', '2 eggs', '4 1/2 cups (639 grams) all-purpose flour', '4 teaspoons baking soda*', '1 tablespoon ground ginger', '2 teaspoons ground cinnamon', '1 teaspoon ground cloves', '1 teaspoon salt']
+1.50,cups,unsalted butter
+1,cup,granulated sugar
+1,cup,packed brown sugar
+0.50,cup,molasses
+2,large,eggs
+4.50,cups,all-purpose flour
+4,tsp,baking soda
+1,tbsp,ground ginger
+2,tsp,ground cinnamon
+1,tsp,ground cloves
+1,tsp,salt

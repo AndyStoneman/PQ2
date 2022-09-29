@@ -1,1 +1,12 @@
-['1 cup butter, softened', '3/4 cup sugar', '1 large egg, room temperature', '1/2 teaspoon vanilla extract', '2-1/2 cups all-purpose flour', '1 teaspoon baking powder', '1/4 teaspoon salt', 'FROSTING:', '1/2 cup butter, softened', "4 cups confectioners' sugar", '1 teaspoon vanilla extract', '3 to 4 tablespoons 2% milk', 'Red food coloring, optional']
+1,cup,butter
+0.75,cup,sugar
+1,large,egg
+0.50,tsp,vanilla extract
+2.50,cups,all-purpose flour
+1,tsp,baking powder
+0.25,tsp,salt
+0,INSTRUCTIONS,FROSTING
+0.50,cup,butter
+4,cups,powdered sugar
+1,tsp,vanilla extract
+3.5,tbsp,2% milk

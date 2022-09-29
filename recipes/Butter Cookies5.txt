@@ -1,1 +1,9 @@
-['1 cup (2 sticks; 230g) unsalted butter, softened to room temperature', '3/4 cup (150g) granulated sugar', '1 and 1/2 teaspoons pure vanilla extract', '1 teaspoon almond extract', '1 large egg, at room temperature', '2 and 1/4 cups (281g) all-purpose flour (spoon & leveled)', '1/2 teaspoon salt', '1 – 2 Tablespoons (15-30ml) milk', 'one 4-ounce quality semi-sweet chocolate bar (113g), finely chopped*', 'maraschino cherries', 'sprinkles or coarse sugar']
+1,cup,unsalted butter
+0.75,cup,granulated sugar
+1.50,tsp,pure vanilla extract
+1,tsp,almond extract
+1,large,egg
+2.25,cups,all-purpose flour
+0.50,tsp,salt
+2,tbsp,milk
+4,oz,semi-sweet chocolate chips
