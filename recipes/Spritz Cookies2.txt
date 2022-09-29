@@ -1,4 +1,4 @@
-[1, cup, unsalted butter,
+1, cup, unsalted butter,
 .66, cup, granulated sugar,
 1, large, egg,
 2, tsp, vanilla extract,
@@ -9,4 +9,4 @@
 0.5, cup, white chocolate chips melted,
 0, lol, Sparkling sugar,
 0, lol, Finely shredded coconut,
-0, lol, Christmas sprinkles, such as red, white and green nonpareils]
+0, lol, Christmas sprinkles, such as red, white and green nonpareils

@@ -60,20 +60,36 @@ class Recipe:
         Returns ingredient if parseable, None if empty string passed.
         Two modes, csv for csv formatted files and other for the way Andy did it.
         """
-        
-        ingred = line.split(",")
+
+        ingredient = line.split(",")
         # format ingredient as name, amount, unit
-        ingredient = Ingredient(str(ingred[2]), float(ingred[0]),
-                str(ingred[1]))
+
         for i in range(len(ingredient)):
             ingredient[i] = ingredient[i].strip()
-        if ingredient[2] == "cups":
-            ingredient[2] == "cup"
-        if ingredient[2] == "teaspoon" or ingredient[2] == "teaspoons":
-            ingredient[2] == "tsp"
-        return ingredient
-       
+            ingredient[i] = ingredient[i].lower()
 
+        if "flour" in ingredient[2]:
+            ingredient[2] = "all-purpose flour"
+
+        if ingredient[2] == "unsalted butter":
+            ingredient[2] = "butter"
+        if ingredient[2] == "pure vanilla extract":
+            ingredient[2] = "vanilla extract"
+        if ingredient[2] == "sugar":
+            ingredient[2] = "granulated sugar"
+        if ingredient[1] == "cups":
+            ingredient[1] = "cup"
+        if ingredient[1] == "teaspoon" or ingredient[1] == "teaspoons":
+            ingredient[1] = "tsp"
+        ingred_obj = Ingredient(str(ingredient[2]), float(ingredient[0]),
+                                str(ingredient[1]))
+        return ingred_obj
+
+
+
+    def calculate_fitness(self):
+        # determine variation of elements NOT in common set
+        return None
 
     
     def get_fitness(self):

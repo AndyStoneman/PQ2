@@ -89,6 +89,17 @@ class GeneticAlgorithm:
                   "\nFitness: " + str(self.recipes[-1].get_fitness()))
             num_iteration += 1
 
+    def create_common_list(self):
+        ingredient_amounts = {}
+        for recipe in self.recipes:
+            ingredients = recipe.get_ingredient_names()
+            for ingredient in ingredients:
+                ingredient_amounts[ingredient] = ingredient_amounts.\
+                                                     get(ingredient, 0) + 1
+        common_list = sorted(ingredient_amounts.items(),
+                             key=lambda item: item[1])[-9:]
+        return common_list
+
     def selection(self):
         """
         Runs the selection process, where twice the number of recipes in the initial population
@@ -290,6 +301,6 @@ def main():
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
     '''
 
-    print(ga.generate_random())
+    print(ga.create_common_set())
 
 main()
