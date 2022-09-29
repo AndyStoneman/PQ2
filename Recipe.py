@@ -37,20 +37,15 @@ class Recipe:
         if filename != "":
             self.filename_components = self.filename.split(".")
             self.name = self.filename_components[0][8:]#8 to allow for "recipes"
-            f = open(filename, 'r')
-            my_line = f.readline()
-            #may need to convert from one line to 
-            while my_line:
-                if my_line[0] == "[" or my_line[0] == '\'':
-                    ingredient = self.parse_line_for_recipe(my_line, "not_csv")
-                else:
-                    ingredient = self.parse_line_for_recipe(my_line, "csv")
-                
-                if ingredient != None:
+            with open(filename, 'r') as f:
+                my_line = f.readline()
+                #may need to convert from one line to 
+                while my_line:
+                    ingredient = self.parse_line_for_recipe(my_line)
+            
                     self.ingredient_names.append(ingredient.get_name())
                     self.ingredients.append(ingredient)
-                my_line = f.readline()
-            f.close()
+                    my_line = f.readline()
         else:
             self.ingredients = ingredient_list
             for i in range(len(self.ingredients)):
@@ -59,33 +54,25 @@ class Recipe:
             
         self.fitness = len(self.ingredients)
     
-    def parse_line_for_recipe(self, line, formatting='csv'):
+    def parse_line_for_recipe(self, line):
         """
         Parses line input into ingredient obj
         Returns ingredient if parseable, None if empty string passed.
         Two modes, csv for csv formatted files and other for the way Andy did it.
         """
-
-        ingredient_list = ""
-        if formatting == 'csv':
-            ingred = line.split(",")
-            # format ingredient as name, amount, unit
-            ingredient = Ingredient(str(ingred[2]), float(ingred[0]),
-                 str(ingred[1]))
-            return ingredient
-        else:
-            #regex sub out ' single quotes and [ ]
-            line = re.sub("\'", "",line)
-            line = re.sub("\[", "", line)
-            line = re.sub("\]", "", line)
-            ingredient = line.split(",")
-            for i in range(len(ingredient)):
-                ingredient[i] = ingredient[i].strip()
-            if line != "":
-                ingredient = Ingredient(str(ingredient[2]), float(ingredient[0]),
-                 str(ingredient[1]))
-                return ingredient 
-        return None
+        
+        ingred = line.split(",")
+        # format ingredient as name, amount, unit
+        ingredient = Ingredient(str(ingred[2]), float(ingred[0]),
+                str(ingred[1]))
+        for i in range(len(ingredient)):
+            ingredient[i] = ingredient[i].strip()
+        if ingredient[2] == "cups":
+            ingredient[2] == "cup"
+        if ingredient[2] == "teaspoon" or ingredient[2] == "teaspoons":
+            ingredient[2] == "tsp"
+        return ingredient
+       
 
 
     
