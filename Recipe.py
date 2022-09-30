@@ -1,3 +1,4 @@
+from operator import truediv
 from Ingredient import Ingredient
 import re
 import glob
@@ -103,7 +104,61 @@ class Recipe:
 
     def calculate_fitness(self):
         # determine variation of elements NOT in common set
-        return None
+        """
+        Common set
+        [('baking powder', 26), ('cinnamon', 29), ('vanilla extract', 50), \
+            ('granulated sugar', 51), \
+            ('baking soda', 53), ('salt', 54), ('egg', 55), ('butter', 60),\
+                 ('all-purpose flour', 73)]
+        """
+        common_set_appearances = {}
+        name_list = []
+        #set up keys
+        for k,v in [('baking powder', 26), ('cinnamon', 29), ('vanilla extract', 50), \
+            ('granulated sugar', 51), \
+            ('baking soda', 53), ('salt', 54), ('egg', 55), ('butter', 60),\
+                 ('all-purpose flour', 73)]:
+            common_set_appearances[k] = 0
+            name_list.append(k)
+        
+        for k in common_set_appearances.keys():
+            if k in self.get_ingredient_names():
+                common_set_appearances[k] += 1
+            
+        print(common_set_appearances)
+        
+        #now, for the "optional"
+        #we allow for either vanilla OR cinnamon to make recipe fit
+        #also allow for either baking soda OR baking powder or both
+
+        #method 2:
+        requiredIngredients = sum(common_set_appearances.values())
+
+        if requiredIngredients >= 6:
+             hasRequiredIngredients = True
+        else:
+            hasRequiredIngredients = False
+        """
+        hasRequiredIngredients = True
+        if not(common_set_appearances["vanilla extract"] >= 1 or \
+            common_set_appearances["cinnamon"] >= 1): 
+            hasRequiredIngredients = False
+        if not(common_set_appearances["baking soda"] >= 1 or \
+            common_set_appearances["baking powder"] >= 1):
+            hasRequiredIngredients = False
+        """
+
+        fitness = 0
+        #now, for ingredient not in ingredients required core, give point
+        for ingredient in self.get_ingredient_names():
+            if ingredient not in common_set_appearances.keys():
+                fitness += 1
+      
+        if hasRequiredIngredients:
+            return fitness
+        else:
+            return 0
+        
 
     
     def get_fitness(self):
