@@ -68,19 +68,33 @@ class Recipe:
             ingredient[i] = ingredient[i].strip()
             ingredient[i] = ingredient[i].lower()
 
+        #standardizing common ingredients that appear with different names
         if "flour" in ingredient[2]:
-            ingredient[2] = "all-purpose flour"
-
+            ingredient[2] = "all-purpose flour" #for now we removed cake flour
         if ingredient[2] == "unsalted butter":
             ingredient[2] = "butter"
         if ingredient[2] == "pure vanilla extract":
             ingredient[2] = "vanilla extract"
         if ingredient[2] == "sugar":
             ingredient[2] = "granulated sugar"
+        if ingredient[2] == "ground cinnamon":
+            ingredient[2] = "cinnamon"
+        if ingredient[2] == "ground nutmeg":
+            ingredient[2] = "nutmeg"
+        if "cocoa power" in ingredient[2]:
+            ingredient[2] = "cocoa powder"
+
+
+        # Ingredient standardization
         if ingredient[1] == "cups":
             ingredient[1] = "cup"
         if ingredient[1] == "teaspoon" or ingredient[1] == "teaspoons":
             ingredient[1] = "tsp"
+        if ingredient[1] == "tablespoon" or ingredient[1] == "tablespoons":
+            ingredient[1] = "tbsp"
+        if ingredient[1] == "ounces":
+            ingredient[1] = "oz"
+
         ingred_obj = Ingredient(str(ingredient[2]), float(ingredient[0]),
                                 str(ingredient[1]))
         return ingred_obj
