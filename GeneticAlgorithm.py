@@ -298,11 +298,13 @@ def main():
             continue
     
     ga.save_recipe_to_file(all_recipes, "recipe_objects_inspiring.pickle")
-    
     '''
+    
     #print("unpickle")
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
     print(ga.generate_random())
-    #print(ga.create_common_set())
+    x=ga.generate_random()
+    print(x.calculate_fitness())
+    #print(ga.create_common_list())
 
 main()
