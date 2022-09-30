@@ -3,4 +3,4 @@
 1,tsp,pure vanilla extract
 3.5,cups,all-purpose flour
 0.25,tsp,salt
-6,oz,finely chopped semisweet chocolate
+6,oz,semisweet chocolate chips
