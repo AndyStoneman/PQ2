@@ -281,6 +281,7 @@ class GeneticAlgorithm:
 
 def main():
     #For testing!
+    
     ga = GeneticAlgorithm(1, "recipes/" + "*.txt")
     #print("x")
 
@@ -296,11 +297,12 @@ def main():
         except:
             continue
     
-    # ga.save_recipe_to_file(all_recipes, "recipe_objects_inspiring.pickle")
+    ga.save_recipe_to_file(all_recipes, "recipe_objects_inspiring.pickle")
+    
+    '''
     #print("unpickle")
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
-    '''
-
-    print(ga.create_common_set())
+    print(ga.generate_random())
+    #print(ga.create_common_set())
 
 main()
