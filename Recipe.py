@@ -100,8 +100,8 @@ class Recipe:
                                 str(ingredient[1]))
         return ingred_obj
 
-
-
+    def read_unique(self): 
+        
     def calculate_fitness(self):
         # determine variation of elements NOT in common set
         """
