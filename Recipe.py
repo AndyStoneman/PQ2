@@ -102,6 +102,7 @@ class Recipe:
 
     def read_unique(self): 
         #Add this functionality, so we can read the CSV file in 
+        return None
     def calculate_fitness(self):
         # determine variation of elements NOT in common set
         """
