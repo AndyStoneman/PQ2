@@ -1,8 +1,5 @@
 amount, unit, name, score
 2, cups, coarsely crushed pretzel sticks, 2
-1, cup, pistachio pudding mix, -4
-0.5, cup, pistachios, 0.5, 
-0.5, cup, sliced almonds, 2
 2, cups, M&Ms, 2
 1, tsp, nutmeg, 4
 2, cups, apple pie filling, 3
@@ -23,7 +20,6 @@ amount, unit, name, score
 1, tsp, instant espresso powder, 1
 0.25, cup, bourbon, 4
 2, tsp, whipping cream, 1
-0.75, cups, chopped walnuts, 4
 0.333, cup, black sesame seeds, 0.5
 0.25, cup, coconut butter, 2
 2, cups, whole wheat flour, -1
