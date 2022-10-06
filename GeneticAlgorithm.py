@@ -2,6 +2,7 @@ import glob
 import random
 from Recipe import Recipe
 from Ingredient import Ingredient
+from GroupIngredients import GroupIngredients
 import pickle
 
 
@@ -40,8 +41,9 @@ class GeneticAlgorithm:
 
         for filename in glob.glob(input_recipes):
             recipe = Recipe(filename=filename)
-            self.recipes.append(recipe)
-            self.inspiring_set_ingredient_names.update(recipe.get_ingredient_names())
+            if recipe != None:
+                self.recipes.append(recipe)
+                self.inspiring_set_ingredient_names.update(recipe.get_ingredient_names())
         self.inspiring_set_ingredient_length = len(list(self.inspiring_set_ingredient_names))
 
     def generate_random(self):
@@ -286,6 +288,7 @@ def main():
     #print("x")
 
     '''
+    #SAVING 
     all_recipes = []
     files = glob.glob("recipes/" + "*.txt")
     #print(files)
@@ -299,11 +302,16 @@ def main():
     
     ga.save_recipe_to_file(all_recipes, "recipe_objects_inspiring.pickle")
     '''
+    #personalIngredients = GroupIngredients("personalIngredients.csv")
+    #ga.save_recipe_to_file(personalIngredients, "personalIngredientsList.pickle" )
+
+    #print(personalIngredients)
     
     #print("unpickle")
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
-    print(ga.generate_random())
-    x=ga.generate_random()
+    #print(ga.generate_random())
+    l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
+    x = random.choice(l)
     print(x.calculate_fitness())
     #print(ga.create_common_list())
 

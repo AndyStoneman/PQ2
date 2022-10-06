@@ -1,7 +1,8 @@
 from operator import truediv
 from Ingredient import Ingredient
-import re
-import glob
+from GroupIngredients import GroupIngredients
+
+#import glob
 
 class Recipe:
     """
@@ -43,9 +44,9 @@ class Recipe:
                 #may need to convert from one line to 
                 while my_line:
                     ingredient = self.parse_line_for_recipe(my_line)
-            
-                    self.ingredient_names.append(ingredient.get_name())
-                    self.ingredients.append(ingredient)
+                    if ingredient != None:
+                        self.ingredient_names.append(ingredient.get_name())
+                        self.ingredients.append(ingredient)
                     my_line = f.readline()
         else:
             self.ingredients = ingredient_list
@@ -61,6 +62,8 @@ class Recipe:
         Returns ingredient if parseable, None if empty string passed.
         Two modes, csv for csv formatted files and other for the way Andy did it.
         """
+        if line[0] == "[" or "\'":
+            return
 
         ingredient = line.split(",")
         # format ingredient as name, amount, unit
@@ -112,54 +115,30 @@ class Recipe:
             ('baking soda', 53), ('salt', 54), ('egg', 55), ('butter', 60),\
                  ('all-purpose flour', 73)]
         """
-        common_set_appearances = {}
-        name_list = []
+        common_set_appearances = 0
         #set up keys
-        for k,v in [('baking powder', 26), ('cinnamon', 29), ('vanilla extract', 50), \
-            ('granulated sugar', 51), \
-            ('baking soda', 53), ('salt', 54), ('egg', 55), ('butter', 60),\
-                 ('all-purpose flour', 73)]:
-            common_set_appearances[k] = 0
-            name_list.append(k)
-        
-        for k in common_set_appearances.keys():
-            if k in self.get_ingredient_names():
-                common_set_appearances[k] += 1
-            
-        print(common_set_appearances)
-        
-        #now, for the "optional"
-        #we allow for either vanilla OR cinnamon to make recipe fit
-        #also allow for either baking soda OR baking powder or both
+        #common list
+        common_dict = [('baking soda', 50), ('baking powder', 50),\
+             ('vanilla extract', 50), \
+            ('sugar', 51), \
+             ('salt', 54), ('egg', 55), ('butter', 60),\
+                 ('all-purpose flour', 73)]
 
-        #method 2:
-        requiredIngredients = sum(common_set_appearances.values())
+        #^^we changed to 'sugar' but may be issues w brown sugar, etc. 
+        print(self.get_ingredient_names())
+        #use common list method in future !
+        for k,v in common_dict:
+                if k in self.get_ingredient_names():
+                    common_set_appearances += 1
 
-        if requiredIngredients >= 6:
-             hasRequiredIngredients = True
-        else:
-            hasRequiredIngredients = False
-        """
-        hasRequiredIngredients = True
-        if not(common_set_appearances["vanilla extract"] >= 1 or \
-            common_set_appearances["cinnamon"] >= 1): 
-            hasRequiredIngredients = False
-        if not(common_set_appearances["baking soda"] >= 1 or \
-            common_set_appearances["baking powder"] >= 1):
-            hasRequiredIngredients = False
-        """
 
-        fitness = 0
-        #now, for ingredient not in ingredients required core, give point
-        for ingredient in self.get_ingredient_names():
-            if ingredient not in common_set_appearances.keys():
-                fitness += 1
-      
-        if hasRequiredIngredients:
-            return fitness
-        else:
-            return 0
+        requiredIngredients = common_set_appearances / (len(common_dict))
+        print(requiredIngredients)
+
+        #fitness 
+
         
+    
 
     
     def get_fitness(self):
