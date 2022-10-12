@@ -1,6 +1,7 @@
 from operator import truediv
 from Ingredient import Ingredient
 from GroupIngredients import GroupIngredients
+import random
 
 #import glob
 
@@ -135,12 +136,18 @@ class Recipe:
         requiredIngredients = common_set_appearances / (len(common_dict))
         print(requiredIngredients)
 
-        #fitness 
-
+        #Do we want to restrain our total ingredient count per recipe to some range of values? Like 10 - 12? 
+        #Would we want to create an instance of the GroupIngredients class here? 
+        personal = GroupIngredients(personalIngredients.csv) 
         
-    
+        special_count = 0
+        for ing in personal: 
+            if ing[2] in self.get_ingredient_names():
+                special_count += ing[3] #add or subtract or keep the count netural
+        
+        specialIngredients = special_count / (len(personal))
+        print(specialIngredients)
 
-    
     def get_fitness(self):
         """
         A getter method for fitness of a recipe
