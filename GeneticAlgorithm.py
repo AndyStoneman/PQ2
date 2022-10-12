@@ -215,7 +215,12 @@ class GeneticAlgorithm:
         """
         if len(recipe.ingredients) < self.inspiring_set_ingredient_length:
             new_ingredient = random.choice(list(self.inspiring_set_ingredient_names))
-            while not recipe.add_ingredient(Ingredient(new_ingredient, random.randint(0.0, 50.0))):
+            #Here we could use random.choices(population, weights=None, *, cum_weights=None, k=1)
+            #We need to change how we think about the weights because for the special/personal ingredients that correlates with the score 
+            #Options: (1) ascribe weight that Python can interpret to each score - for exxample - if ingreident[3] == 0, set to 3.125 
+            #(2) change the actual scores inside the file 
+            #(3) New plan? Don't use this method? 
+            while not recipe.add_ingredient(Ingredient(new_ingredient, random.randint(0.0, 50.0))): 
                 new_ingredient = random.choice(list(self.inspiring_set_ingredient_names))
     
     def mutate_remove_recipe_ingredient(self, recipe):
