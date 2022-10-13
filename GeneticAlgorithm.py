@@ -42,7 +42,7 @@ class GeneticAlgorithm:
 
         for filename in glob.glob(input_recipes):
             recipe = Recipe(filename=filename)
-            if recipe != None:
+            if recipe:
                 self.recipes.append(recipe)
                 self.inspiring_set_ingredient_names.update(recipe.get_ingredient_names())
         self.inspiring_set_ingredient_length = len(list(self.inspiring_set_ingredient_names))
@@ -68,17 +68,20 @@ class GeneticAlgorithm:
                 probability = random.randint(0, 100)
                 if probability < 80:
                     mutation_choice = random.randint(0, 4)
+                    '''
                     if mutation_choice == 0:
                         self.mutate_ingredient_amount(rec)
-                    elif mutation_choice == 1:
+                    '''
+                    if mutation_choice == 1:
                         self.mutate_ingredient_name(rec)
                     elif mutation_choice == 2:
                         self.mutate_add_recipe_ingredient(rec)
+                    '''
                     elif mutation_choice == 3:
                         self.mutate_remove_recipe_ingredient(rec)
-
+                    '''
                     # Normalization
-                    self.normalize_ingredient_quantities(rec)
+                    #self.normalize_ingredient_quantities(rec)
 
             # Combining top 50% of new and original recipes
             self.recipes.sort(key=lambda x: x.fitness)
@@ -136,9 +139,9 @@ class GeneticAlgorithm:
         new_recipes = []
         for i in range(0, len(selected_recipes), 2):
             if selected_recipes[i].get_fitness() < selected_recipes[i + 1].get_fitness():
-                random_index = random.randint(0, selected_recipes[i].get_fitness() - 1)
+                random_index = random.randint(0, selected_recipes[i].get_fitness())
             else:
-                random_index = random.randint(0, selected_recipes[i + 1].get_fitness() - 1)
+                random_index = random.randint(0, selected_recipes[i + 1].get_fitness())
             first_half = selected_recipes[i].ingredients[0:random_index]
             second_half = selected_recipes[i + 1].ingredients[random_index:]
             combined_list = self.check_fix_duplicates_recombination(first_half, second_half)
@@ -201,8 +204,9 @@ class GeneticAlgorithm:
         old_fitness = recipe.fitness
         personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
         new_ingredient = random.choice(personal_items.ingredients)
-
+        print(recipe.ingredients)
         ingredient_to_remove = random.choice(recipe.ingredients)
+
         common_dict = [('baking soda', 50), ('baking powder', 50),\
              ('vanilla extract', 50), \
             ('sugar', 51), ('granulated sugar', 30),
@@ -231,14 +235,14 @@ class GeneticAlgorithm:
         Args:
              recipe (Recipe): The recipe that is having one of its ingredients mutated.
         """
-        old_fitness = recipe.calculate_fitness()
+        old_fitness = recipe.get_fitness()
         personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
         new_ingredient = random.choice(personal_items.ingredients)
         if len(recipe.ingredients) + 1 <= threshold:
             while not recipe.add_ingredient(new_ingredient):
                 new_ingredient = random.choice(personal_items.ingredients)
         
-        new_fitness = recipe.calculate_fitness()
+        new_fitness = recipe.get_fitness()
         if old_fitness < new_fitness:
             self.positive_mutations += 1
         
@@ -277,7 +281,7 @@ class GeneticAlgorithm:
         recipe.ingredients[-1].set_amount(remainder)
         normalized_total += remainder
     
-    def save_recipe_to_file(self,recipe_list, file):
+    def save_recipe_to_file(self, recipe_list, file):
         """
         Saves a list of recipes to a file (allows us to save inspiring set)
         Inspired by https://stackoverflow.com/questions/20716812/saving-and-loading-multiple-objects-in-pickle-file
@@ -310,7 +314,7 @@ class GeneticAlgorithm:
 def main():
     #For testing!
     
-    ga = GeneticAlgorithm(1, "recipes/" + "*.txt")
+    ga = GeneticAlgorithm(10, "recipes/" + "*.txt")
     #print("x")
 
     '''
@@ -336,13 +340,12 @@ def main():
     #print("unpickle")
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
     #print(ga.generate_random())
+    ga.run()
     l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     x = random.choice(l)
     print(x.calculate_fitness())
     if not hasattr(x, 'score'):
-        print(x.ingredients)
         ga.mutate_add_recipe_ingredient(x)
-        print(x.ingredients)
         
         ga.mutate_ingredient_name(x)
         print(x)

@@ -46,9 +46,10 @@ class Recipe:
                 #may need to convert from one line to 
                 while my_line:
                     ingredient = self.parse_line_for_recipe(my_line)
-                    if ingredient != None:
+                    if ingredient:
                         self.ingredient_names.append(ingredient.get_name())
                         self.ingredients.append(ingredient)
+                        print("check")
                     my_line = f.readline()
         else:
             self.ingredients = ingredient_list
@@ -64,8 +65,7 @@ class Recipe:
         Returns ingredient if parseable, None if empty string passed.
         Two modes, csv for csv formatted files and other for the way Andy did it.
         """
-        if line[0] == "[" or "\'":
-            return
+
 
         ingredient = line.split(",")
         # format ingredient as name, amount, unit
@@ -103,6 +103,7 @@ class Recipe:
 
         ingred_obj = Ingredient(str(ingredient[2]), float(ingredient[0]),
                                 str(ingredient[1]))
+        print("check")
         return ingred_obj
 
     def read_unique(self): 
@@ -151,7 +152,7 @@ class Recipe:
                 if ing.get_name() in self.get_ingredient_names():
                     special_count += abs(ing.score) #reward the polarizing
 
-
+        self.fitness = 1 + special_count * requiredIngredients
 
         ideal_num_ingreds = 0
 
@@ -160,10 +161,12 @@ class Recipe:
                 ideal_num_ingreds += 1
 
         if 2 < ideal_num_ingreds < 7:
+            print("i multiplied!")
             self.fitness * 2
 
         print("Special count", special_count)
         print("score", requiredIngredients * special_count)
+
 
     def get_fitness(self):
         """
