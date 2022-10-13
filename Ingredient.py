@@ -21,8 +21,13 @@ class Ingredient:
 
     def __repr__(self):
         """Lets us make an object of the same value."""
+        hasScore = hasattr(self, 'score')
+        addToRepr = 1
+        if hasScore:
+            addToRepr = self.score
+            
         return "Ingredient('{0}', {1}, '{2}', {3})\n".format(self.name, self.amount,
-        self.unit, self.score)
+        self.unit, addToRepr)
 
     def set_amount(self, new_amount):
         self.amount = new_amount
