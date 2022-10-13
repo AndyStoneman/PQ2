@@ -39,13 +39,17 @@ class GeneticAlgorithm:
         self.recipes = []
         self.inspiring_set_ingredient_names = set()
         #allow for passing null [] recipe list to create inspiring set
-
+        self.average_recipe_length = 0
+        self.num_files = 0
         for filename in glob.glob(input_recipes):
             recipe = Recipe(filename=filename)
             if recipe:
                 self.recipes.append(recipe)
                 self.inspiring_set_ingredient_names.update(recipe.get_ingredient_names())
+                self.average_recipe_length += len(recipe.get_ingredient_names())
+                self.num_files += 1
         self.inspiring_set_ingredient_length = len(list(self.inspiring_set_ingredient_names))
+        self.average_recipe_length /= self.num_files
 
     def generate_random(self):
         return random.choice(self.recipes)
@@ -58,6 +62,8 @@ class GeneticAlgorithm:
         num_iteration = 0
         # Start iterations
         while num_iteration < self.iterations:
+            for recipe in self.recipes:
+                recipe.calculate_fitness(self.average_recipe_length)
             original_list = self.recipes
             # Selection
             self.selection()
@@ -83,14 +89,18 @@ class GeneticAlgorithm:
                     # Normalization
                     #self.normalize_ingredient_quantities(rec)
 
+            for recipe in self.recipes:
+                recipe.calculate_fitness(self.average_recipe_length)
+
             # Combining top 50% of new and original recipes
             self.recipes.sort(key=lambda x: x.fitness)
             original_list.sort(key=lambda x: x.fitness)
             new_generation = self.recipes[(len(self.recipes) // 2):] + original_list[(len(original_list) // 2):]
             self.recipes = new_generation
-
             # Iteration print statements
             self.recipes.sort(key=lambda x: x.fitness)
+            self.recipes = new_generation
+            print(self.recipes[-1])
             print("ITERATION: " + str(num_iteration + 1) + "\nFittest recipe:\nName: " + str(self.recipes[-1].get_name()) +
                   "\nFitness: " + str(self.recipes[-1].get_fitness()))
             num_iteration += 1
@@ -114,7 +124,7 @@ class GeneticAlgorithm:
         selected_recipes = []
         total = 0
         for j in range(len(self.recipes)):
-            total += self.recipes[j].get_fitness()
+            total += int(self.recipes[j].get_fitness())
 
         self.recipes.sort(key=lambda x: x.fitness)
         for i in range(2 * len(self.recipes)):
@@ -139,9 +149,9 @@ class GeneticAlgorithm:
         new_recipes = []
         for i in range(0, len(selected_recipes), 2):
             if selected_recipes[i].get_fitness() < selected_recipes[i + 1].get_fitness():
-                random_index = random.randint(0, selected_recipes[i].get_fitness())
+                random_index = random.randint(0, int(selected_recipes[i].get_fitness()))
             else:
-                random_index = random.randint(0, selected_recipes[i + 1].get_fitness())
+                random_index = random.randint(0, int(selected_recipes[i + 1].get_fitness()))
             first_half = selected_recipes[i].ingredients[0:random_index]
             second_half = selected_recipes[i + 1].ingredients[random_index:]
             combined_list = self.check_fix_duplicates_recombination(first_half, second_half)
@@ -216,12 +226,13 @@ class GeneticAlgorithm:
         common_list = []
         for k,v in common_dict:
             common_list.append(k)
-
-        while ingredient_to_remove.get_name() in common_list:
+        count = 0
+        while ingredient_to_remove.get_name() in common_list and count == 8:
             ingredient_to_remove = random.choice(recipe.ingredients)
             if ingredient_to_remove.get_name() not in common_list:
                 recipe.remove_ingredient(ingredient_to_remove)
                 break
+            count += 1
 
         while not recipe.add_ingredient(new_ingredient):
                 new_ingredient = random.choice(personal_items.ingredients)
@@ -345,7 +356,7 @@ def main():
 
 
     ga.run()
-    print(ga.recipes[-1].ingredients)
+    #print(ga.recipes[-1].ingredients)
     #l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     #x = random.choice(l)
 

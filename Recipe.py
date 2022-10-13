@@ -109,7 +109,7 @@ class Recipe:
     def read_unique(self): 
         #Add this functionality, so we can read the CSV file in 
         return None
-    def calculate_fitness(self):
+    def calculate_fitness(self, avg_recipe_length):
         # determine variation of elements NOT in common set
         """
         Common set
@@ -128,7 +128,7 @@ class Recipe:
                  'all-purpose flour']
 
         #^^we changed to 'sugar' but may be issues w brown sugar, etc. 
-        print(self.get_ingredient_names())
+        #print(self.get_ingredient_names())
         #use common list method in future !
         for k in common_dict:
                 if k in self.get_ingredient_names():
@@ -136,7 +136,7 @@ class Recipe:
 
 
         requiredIngredients = common_set_appearances / (len(common_dict))
-        print(requiredIngredients)
+        #print(requiredIngredients)
 
         #Do we want to restrain our total ingredient count per recipe to some range of values? Like 10 - 12? 
         #Would we want to create an instance of the GroupIngredients class here? 
@@ -152,21 +152,16 @@ class Recipe:
                 if ing.get_name() in self.get_ingredient_names():
                     special_count += abs(ing.score) #reward the polarizing
 
-        self.fitness = 1 + special_count * requiredIngredients
-
+        difference = abs(len(self.ingredients) - avg_recipe_length)
+        self.fitness = (1 + special_count * requiredIngredients) * (1 / difference)
+        #print("THIS IS FITNESS: " + str(self.fitness))
         ideal_num_ingreds = 0
 
-        for ingred in self.ingredients:
-            if ingred not in personal.ingredients and common_dict:
-                ideal_num_ingreds += 1
 
-        if 2 < ideal_num_ingreds < 7:
-            print("i multiplied!")
-            self.fitness *= 2
-        else:
-            self.fitness /= 2
-        print("Special count", special_count)
-        print("score", requiredIngredients * special_count)
+
+
+        #print("Special count", special_count)
+        #print("score", requiredIngredients * special_count)
 
 
     def get_fitness(self):
