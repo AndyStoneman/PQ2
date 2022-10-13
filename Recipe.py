@@ -49,7 +49,7 @@ class Recipe:
                     if ingredient:
                         self.ingredient_names.append(ingredient.get_name())
                         self.ingredients.append(ingredient)
-                        print("check")
+                        
                     my_line = f.readline()
         else:
             self.ingredients = ingredient_list
@@ -103,7 +103,7 @@ class Recipe:
 
         ingred_obj = Ingredient(str(ingredient[2]), float(ingredient[0]),
                                 str(ingredient[1]))
-        print("check")
+       
         return ingred_obj
 
     def read_unique(self): 
@@ -162,8 +162,9 @@ class Recipe:
 
         if 2 < ideal_num_ingreds < 7:
             print("i multiplied!")
-            self.fitness * 2
-
+            self.fitness *= 2
+        else:
+            self.fitness /= 2
         print("Special count", special_count)
         print("score", requiredIngredients * special_count)
 

@@ -166,13 +166,14 @@ class GeneticAlgorithm:
             y = 0
             while y < len(second_half):
                 if first_half[x].get_name() == second_half[y].get_name():
-                    new_amount = first_half[x].get_amount() + second_half[y].get_amount()
+                    new_amount = first_half[x].get_amount() 
                     first_half[x].set_amount(new_amount)
                     second_half.remove(second_half[y])
                 else:
                     y += 1
         return first_half + second_half
 
+    
     def mutate_ingredient_amount(self, recipe):
         """
         Mutation that changes an ingredient amount.
@@ -204,7 +205,7 @@ class GeneticAlgorithm:
         old_fitness = recipe.fitness
         personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
         new_ingredient = random.choice(personal_items.ingredients)
-        print(recipe.ingredients)
+        #print(recipe.ingredients)
         ingredient_to_remove = random.choice(recipe.ingredients)
 
         common_dict = [('baking soda', 50), ('baking powder', 50),\
@@ -218,12 +219,13 @@ class GeneticAlgorithm:
 
         while ingredient_to_remove.get_name() in common_list:
             ingredient_to_remove = random.choice(recipe.ingredients)
-            print("To remove", ingredient_to_remove)
+            if ingredient_to_remove.get_name() not in common_list:
+                recipe.remove_ingredient(ingredient_to_remove)
+                break
 
         while not recipe.add_ingredient(new_ingredient):
                 new_ingredient = random.choice(personal_items.ingredients)
         
-        recipe.remove_ingredient(ingredient_to_remove)
         new_fitness = recipe.fitness
         if new_fitness > old_fitness:
             self.positive_mutations += 1
@@ -314,7 +316,7 @@ class GeneticAlgorithm:
 def main():
     #For testing!
     
-    ga = GeneticAlgorithm(10, "recipes/" + "*.txt")
+    ga = GeneticAlgorithm(50, "recipes/" + "*.txt")
     #print("x")
 
     '''
@@ -340,9 +342,14 @@ def main():
     #print("unpickle")
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
     #print(ga.generate_random())
+
+
     ga.run()
-    l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
-    x = random.choice(l)
+    print(ga.recipes[-1].ingredients)
+    #l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
+    #x = random.choice(l)
+
+    """
     print(x.calculate_fitness())
     if not hasattr(x, 'score'):
         ga.mutate_add_recipe_ingredient(x)
@@ -352,5 +359,6 @@ def main():
         print(ga.create_common_list())
 
         print(ga.positive_mutations)
+    """
 
 main()
