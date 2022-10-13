@@ -120,16 +120,16 @@ class Recipe:
         common_set_appearances = 0
         #set up keys
         #common list
-        common_dict = [('baking soda', 50), ('baking powder', 50),\
-             ('vanilla extract', 50), \
-            ('sugar', 51), \
-             ('salt', 54), ('egg', 55), ('butter', 60),\
-                 ('all-purpose flour', 73)]
+        common_dict = ['baking soda', 'baking powder',\
+             'vanilla extract', \
+            'sugar',
+             'salt', 'egg', 'butter',\
+                 'all-purpose flour']
 
         #^^we changed to 'sugar' but may be issues w brown sugar, etc. 
         print(self.get_ingredient_names())
         #use common list method in future !
-        for k,v in common_dict:
+        for k in common_dict:
                 if k in self.get_ingredient_names():
                     common_set_appearances += 1
 
@@ -148,11 +148,22 @@ class Recipe:
             personal = pickle.load(f) #load in personal ingredient obj
             #print(personal)
             for ing in personal.ingredients:
-                if ing.get_name() in  self.get_ingredient_names():
+                if ing.get_name() in self.get_ingredient_names():
                     special_count += abs(ing.score) #reward the polarizing
 
-        print("Special count",special_count)
-        print("score",requiredIngredients + special_count)
+
+
+        ideal_num_ingreds = 0
+
+        for ingred in self.ingredients:
+            if ingred not in personal.ingredients and common_dict:
+                ideal_num_ingreds += 1
+
+        if 2 < ideal_num_ingreds < 7:
+            self.fitness * 2
+
+        print("Special count", special_count)
+        print("score", requiredIngredients * special_count)
 
     def get_fitness(self):
         """
