@@ -1,0 +1,10 @@
+0.5,cup,butter
+0.5,cup,granulated sugar
+0.5,cup,light brown sugar
+1,large,egg
+1,tsp,pure vanilla extract
+1.50,cups,flour
+0.50,tsp,baking soda
+0.25,tsp,baking powder
+0.50,tsp,sea salt
+1,cup,chocolate chips

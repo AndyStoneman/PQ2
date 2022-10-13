@@ -1,0 +1,9 @@
+0.75,cup,vegetable shortening
+1.125,cup,sugar
+1,large,egg
+0.25,cup,molasses
+2,cup,all-purpose flour
+2,tsp,baking soda
+1.5,tsp,ground ginger
+1,tsp,cinnamon
+0.5,tsp,salt

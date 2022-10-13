@@ -1,0 +1,6 @@
+2.5,cup,all-purpose flour
+1,tsp,kosher salt
+1,cup,unsalted butter
+0.666,cup,granulated sugar
+1,large,egg
+1,tsp,pure vanilla extract

@@ -1,0 +1,9 @@
+1,cup,unsalted butter
+0.75,cup,granulated sugar
+1.50,tsp,pure vanilla extract
+1,tsp,almond extract
+1,large,egg
+2.25,cups,all-purpose flour
+0.50,tsp,salt
+2,tbsp,milk
+4,oz,semi-sweet chocolate chips

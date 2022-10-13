@@ -1,0 +1,10 @@
+1,cup,sweetened shredded coconut,
+.75,cup,chopped pecans,
+1,cup,butter,1-1/2,cups,packed brown sugar,
+0.5,cup,sugar,2,large,eggs,
+1.5,teaspoons,vanilla extract,
+2,cups,all-purpose flour,
+1,teaspoon,baking soda,
+.5,teaspoon,salt,
+2,cups,old-fashioned oats,
+2,cups,chocolate chips

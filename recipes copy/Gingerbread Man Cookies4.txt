@@ -1,0 +1,10 @@
+3,cup,all-purpose flour
+0.75,cup,packed dark brown sugar
+0.75,tsp,baking soda
+1,tbsp,ground cinnamon
+1,tbsp,ground ginger
+0.5,tsp,ground cloves
+0.5,tsp,salt,
+0.75,cup,butter
+0.75,cup,dark molasses
+2,tbsp,milk

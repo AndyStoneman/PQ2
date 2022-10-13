@@ -1,0 +1,12 @@
+6,cups,all-purpose flour
+1,tbsp,baking powder
+1,tbsp,ground ginger
+1,tsp,ground nutmeg
+1,tsp,ground cloves 
+1,tsp,ground cinnamon
+1,cups,shortening
+1,cups,molasses
+1,cups,brown sugar
+0.5,cups,water
+1,large,egg
+1,tsp,vanilla extract

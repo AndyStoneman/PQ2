@@ -1,0 +1,12 @@
+2,cup,all-purpose flour
+1,tsp,baking soda
+1,tsp,cinnamon
+1,tsp,ground cloves
+0.75,tsp,ground ginger,
+0.5,tsp,salt,
+0.75,cup,unsalted butter
+1,cup,granulated sugar
+0.25,cup,dark molasses
+1,large,egg
+1,tsp,pure vanilla extract
+0.66,cup,coarse sugar

@@ -1,0 +1,12 @@
+0.666,cup,unsalted butter
+0.75,cup,packed dark brown sugar
+0.666,cup,molasses
+1,large,egg,
+1,tsp,pure vanilla extract
+3.5,cup,all-purpose flour
+1,tsp,baking soda
+0.5,tsp,salt
+1,tbsp,ground ginger
+1,tbsp,ground cinnamon
+0.5,tsp,ground allspice
+0.5,tsp,ground cloves

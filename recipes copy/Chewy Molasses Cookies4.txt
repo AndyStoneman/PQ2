@@ -1,0 +1,11 @@
+2,cups,all-purpose flour
+2,tsps,baking soda
+1.50,tsp,ground cinnamon
+1,tsp,ground ginger
+0.75,tsp,ground cardamom
+0.50,tsp,kosher salt
+1,large,egg
+0.50,cup,unsalted butter
+0.333,cup,granulated sugar
+0.333,cup,molasses
+0.25,cup,dark brown sugar

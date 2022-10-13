@@ -1,0 +1,4 @@
+1,cups,peanut butter
+1,cups,white sugar
+1,large,egg
+1,tsp,baking soda

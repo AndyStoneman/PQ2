@@ -1,0 +1,11 @@
+1.5,cup,powdered sugar
+1,cup,unsalted butter
+1,tsp,vanilla extract
+0.5,tsp,almond extract
+1,large,egg
+2.5,cup, all-purpose flour
+1,tsp,baking soda
+1,tsp,cream of tartar
+3,cup,powdered sugar
+4,tbsp,milk
+0.25,tsp,vanilla extract

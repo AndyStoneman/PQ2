@@ -1,0 +1,7 @@
+1,cups,unsalted butter
+0.75,cups,granulated sugar
+1,large,egg
+1,tsp,pure vanilla extract
+1,tsp,almond extract
+2.25,cups,all-purpose flour
+0.5,tsp,salt 

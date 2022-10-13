@@ -1,0 +1,14 @@
+0.75,cup,butter
+0.75,cup,packed brown sugar
+0.666,cup,molasses
+1,large,egg
+1,tsp,pure vanilla extract
+3.25,cup,all-purpose flour
+1,tbsp,ground ginger
+1,tsp,baking soda
+1,tsp,ground cinnamon
+0.5,tsp,ground cloves
+0.25,tsp,ground nutmeg,
+0.5,tsp,kosher salt
+2,inches,grated fresh ginger
+0.5,tsp,ground black pepper
