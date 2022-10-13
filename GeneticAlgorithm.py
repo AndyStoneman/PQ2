@@ -34,6 +34,7 @@ class GeneticAlgorithm:
             normalizes quantities in the ingredient to 100oz
     """
     def __init__(self, iterations, input_recipes):
+        self.positive_mutations = 0
         self.iterations = iterations
         self.recipes = []
         self.inspiring_set_ingredient_names = set()
@@ -197,31 +198,51 @@ class GeneticAlgorithm:
              recipe (Recipe): The recipe that is having one of its ingredients mutated.
         
         """
-        if len(recipe.ingredients) < self.inspiring_set_ingredient_length:
-            changing_ingredient = random.choice(recipe.ingredients)
+        old_fitness = recipe.fitness
+        personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
+        new_ingredient = random.choice(personal_items.ingredients)
 
-            inspiring_ingredients = list(self.inspiring_set_ingredient_names)
-            new_ingredient = random.choice(inspiring_ingredients)
-            while not recipe.add_ingredient(Ingredient(new_ingredient, changing_ingredient.get_amount())):
-                new_ingredient = random.choice(inspiring_ingredients)
-            recipe.remove_ingredient(changing_ingredient)
+        ingredient_to_remove = random.choice(recipe.ingredients)
+        common_dict = [('baking soda', 50), ('baking powder', 50),\
+             ('vanilla extract', 50), \
+            ('sugar', 51), ('granulated sugar', 30),
+             ('salt', 54), ('egg', 55), ('butter', 60),\
+                 ('all-purpose flour', 73)]
+        common_list = []
+        for k,v in common_dict:
+            common_list.append(k)
 
-    def mutate_add_recipe_ingredient(self, recipe):
+        while ingredient_to_remove.get_name() in common_list:
+            ingredient_to_remove = random.choice(recipe.ingredients)
+            print("To remove", ingredient_to_remove)
+
+        while not recipe.add_ingredient(new_ingredient):
+                new_ingredient = random.choice(personal_items.ingredients)
+        
+        recipe.remove_ingredient(ingredient_to_remove)
+        new_fitness = recipe.fitness
+        if new_fitness > old_fitness:
+            self.positive_mutations += 1
+
+    def mutate_add_recipe_ingredient(self, recipe, threshold=16):
         """
         Mutation that adds an ingredient from the inspiring set.
 
         Args:
              recipe (Recipe): The recipe that is having one of its ingredients mutated.
         """
-        if len(recipe.ingredients) < self.inspiring_set_ingredient_length:
-            new_ingredient = random.choice(list(self.inspiring_set_ingredient_names))
-            #Here we could use random.choices(population, weights=None, *, cum_weights=None, k=1)
-            #We need to change how we think about the weights because for the special/personal ingredients that correlates with the score 
-            #Options: (1) ascribe weight that Python can interpret to each score - for exxample - if ingreident[3] == 0, set to 3.125 
-            #(2) change the actual scores inside the file 
-            #(3) New plan? Don't use this method? 
-            while not recipe.add_ingredient(Ingredient(new_ingredient, random.randint(0.0, 50.0))): 
-                new_ingredient = random.choice(list(self.inspiring_set_ingredient_names))
+        old_fitness = recipe.calculate_fitness()
+        personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
+        new_ingredient = random.choice(personal_items.ingredients)
+        if len(recipe.ingredients) + 1 <= threshold:
+            while not recipe.add_ingredient(new_ingredient):
+                new_ingredient = random.choice(personal_items.ingredients)
+        
+        new_fitness = recipe.calculate_fitness()
+        if old_fitness < new_fitness:
+            self.positive_mutations += 1
+        
+        #if recipe old fitness < recipe new fitness, we count this as a positive mutation
     
     def mutate_remove_recipe_ingredient(self, recipe):
         """
@@ -318,6 +339,15 @@ def main():
     l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     x = random.choice(l)
     print(x.calculate_fitness())
-    #print(ga.create_common_list())
+    if not hasattr(x, 'score'):
+        print(x.ingredients)
+        ga.mutate_add_recipe_ingredient(x)
+        print(x.ingredients)
+        
+        ga.mutate_ingredient_name(x)
+        print(x)
+        print(ga.create_common_list())
+
+        print(ga.positive_mutations)
 
 main()
