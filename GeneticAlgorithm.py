@@ -145,8 +145,8 @@ class GeneticAlgorithm:
                 new_item = self.regulate_inspiring_ingredient(item[0],item[1])
                 non_core_ingredients[item[0]] = new_item
        
-
-        print(non_core_ingredients)
+        #for testing 
+        #print(non_core_ingredients)
 
         """
         Here, we'll want to filter the list further most likely.
@@ -440,8 +440,15 @@ def main():
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
     #print(ga.generate_random())
 
-    ga.create_inspiring_set_ingredients()
-    #ga.run()
+    """
+    To test abby's functions from 10/16:
+    run the following line of code below, uncommented
+    """
+    #print(ga.create_inspiring_set_ingredients())
+
+
+
+    ga.run()
     #print(ga.recipes[-1].ingredients)
     #l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     #x = random.choice(l)
