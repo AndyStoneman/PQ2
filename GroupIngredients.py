@@ -40,6 +40,8 @@ class GroupIngredients:
         
         return ingred_obj
     
+    def get_name(self):
+        return self.name
     def __str__(self):
         """Returns a string representation of the ingredient."""
         return self.name + ": " + str(self.ingredients)

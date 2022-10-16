@@ -140,26 +140,71 @@ class GeneticAlgorithm:
                     elif name in non_core_ingredients:
                         non_core_ingredients[name].append(ingredient)
         
+        delete_list = []
         for item in non_core_ingredients.items():
+            #filtering: remove any ingredient with only 1 appearance to get
+            #rid of some typos
+            if len(item[1]) <= 1:
+                delete_list.append(item[0])
             if len(item[1]) > 1: #second part of tuple
                 new_item = self.regulate_inspiring_ingredient(item[0],item[1])
                 non_core_ingredients[item[0]] = new_item
        
-        #for testing 
-        #print(non_core_ingredients)
 
         """
         Here, we'll want to filter the list further most likely.
         One way to do that is to eliminate any ingredient that only appears once
         in recipes (so delete all non core ingredients that initially had 
-        len(item[1] above as == 1)).
-
+        len(item[1] above as == 1)). This change has been implemented below
         We also may need to change names to match against our personal 
         ingredients list to give them the same score as those ingredients.
         (There is some overlap, which isn't a bad thing bc this is still 
         ~organic~).
         """
+    
+    
+        #manual filtering, water came from a frosting recipe
+         #we previously had 3 different chocolate chip entries
+        #all with about 1.5 cups, let's consolidate
+
+        manual_keys = ["water", "eggs", "salted butter", 'semisweet chocolate chips', 'semi-sweet chocolate chips']
+        for key in manual_keys:
+            if key in non_core_ingredients:
+                del non_core_ingredients[key]
         
+
+        for key in non_core_ingredients.keys():
+            if "sugar" in key or "salt" in key :
+                delete_list.append(key)
+
+        for key in delete_list:
+            if key in non_core_ingredients:
+                del non_core_ingredients[key]
+
+        
+        #change names and scores if it matches personal ingredient list item
+        if "milk" in non_core_ingredients:
+            non_core_ingredients["non fat milk"] = non_core_ingredients["milk"]
+            non_core_ingredients["non fat milk"].set_score(3)
+            del non_core_ingredients["milk"]
+        #tragically this needs to match our typo
+
+        if "cocoa powder" in non_core_ingredients:
+            non_core_ingredients["unsweetened coco powder"] = non_core_ingredients["cocoa powder"]
+            non_core_ingredients["unsweetened coco powder"].set_score(4)
+            del non_core_ingredients["cocoa powder"]
+            del non_core_ingredients["unsweetened cocoa powder"]
+        
+        if "maple flavoring" in non_core_ingredients:
+            non_core_ingredients["maple extract"] = non_core_ingredients["maple flavoring"]
+            non_core_ingredients["maple extract"].set_score(2)
+        
+        if "nutmeg" in non_core_ingredients:
+            non_core_ingredients["nutmeg"].set_score(4)
+        
+        #for testing 
+        #print(non_core_ingredients)
+          
         return non_core_ingredients
     
     def regulate_inspiring_ingredient(self,ing_name,ingredient_list):
@@ -192,7 +237,7 @@ class GeneticAlgorithm:
         #adjust score
         ingred = Ingredient(ing_name, avg_amount, max_key, 1)
     
-        return [ingred]
+        return ingred
 
         
             
@@ -299,8 +344,17 @@ class GeneticAlgorithm:
         
         """
         old_fitness = recipe.fitness
+        
         personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
-        new_ingredient = random.choice(personal_items.ingredients)
+        inspiring_items = list(self.create_inspiring_set_ingredients().values())
+        
+        #mix of personal items and some pulled from recipes
+        #may need to delete duplicates to avoid unfair weighting
+        all_items = personal_items.ingredients
+    
+        for it in inspiring_items:
+            all_items.append(it)
+        new_ingredient = random.choice(all_items)
         #print(recipe.ingredients)
         ingredient_to_remove = random.choice(recipe.ingredients)
 
@@ -321,7 +375,7 @@ class GeneticAlgorithm:
             count += 1
 
         while not recipe.add_ingredient(new_ingredient):
-                new_ingredient = random.choice(personal_items.ingredients)
+                new_ingredient = random.choice(all_items)
         
         new_fitness = recipe.fitness
         if new_fitness > old_fitness:
@@ -336,10 +390,22 @@ class GeneticAlgorithm:
         """
         old_fitness = recipe.get_fitness()
         personal_items = self.load_recipe_list_from_file("personalIngredientsList.pickle")
-        new_ingredient = random.choice(personal_items.ingredients)
+        inspiring_items = list(self.create_inspiring_set_ingredients().values())
+        
+        #mix of personal items and some pulled from recipes
+        #may need to delete duplicates to avoid unfair weighting
+        all_items = personal_items.ingredients
+    
+        for it in inspiring_items:
+            all_items.append(it)
+   
+        #new_ingredient = random.choice(personal_items.ingredients)
+        new_ingredient = random.choice(all_items)
+        
         if len(recipe.ingredients) + 1 <= threshold:
             while not recipe.add_ingredient(new_ingredient):
-                new_ingredient = random.choice(personal_items.ingredients)
+                #new_ingredient = random.choice(personal_items.ingredients)
+                new_ingredient = random.choice(all_items)
         
         new_fitness = recipe.get_fitness()
         if old_fitness < new_fitness:
@@ -444,9 +510,13 @@ def main():
     To test abby's functions from 10/16:
     run the following line of code below, uncommented
     """
-    #print(ga.create_inspiring_set_ingredients())
+    print(ga.create_inspiring_set_ingredients())
 
-
+    #rec = random.choice(ga.recipes)
+    #for i in range(3):
+        #print(rec)
+        #ga.mutate_add_recipe_ingredient(rec)
+        #print(rec)
 
     ga.run()
     #print(ga.recipes[-1].ingredients)
