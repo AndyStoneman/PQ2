@@ -106,6 +106,10 @@ class GeneticAlgorithm:
             num_iteration += 1
 
     def create_common_list(self):
+        """
+        Used to create our list of common ingredients, which because of its
+        length of 9, we have saved as constant variables elsewhere.
+        """
         ingredient_amounts = {}
         for recipe in self.recipes:
             ingredients = recipe.get_ingredient_names()
@@ -115,6 +119,88 @@ class GeneticAlgorithm:
         common_list = sorted(ingredient_amounts.items(),
                              key=lambda item: item[1])[-9:]
         return common_list
+    
+    def create_inspiring_set_ingredients(self):
+        """
+        Creates a list of ingredients from the inspiring set that were
+        not identified as "common set" ingredients, to be used in 
+        mutation.
+        Returns a list of 'non-core' ingredients.
+        """
+        common_list_ing_names = ['baking soda', 'baking powder', \
+            'vanilla extract', 'sugar', 'granulated sugar', 'salt', 'egg', \
+                'butter', 'all-purpose flour']
+        non_core_ingredients = {}
+        for rec in self.recipes:
+            for ingredient in rec.ingredients:
+                name = ingredient.get_name()
+                if name not in common_list_ing_names:
+                    if name not in non_core_ingredients:
+                        non_core_ingredients[name] = [ingredient]
+                    elif name in non_core_ingredients:
+                        non_core_ingredients[name].append(ingredient)
+        
+        for item in non_core_ingredients.items():
+            if len(item[1]) > 1: #second part of tuple
+                new_item = self.regulate_inspiring_ingredient(item[0],item[1])
+                non_core_ingredients[item[0]] = new_item
+       
+
+        print(non_core_ingredients)
+
+        """
+        Here, we'll want to filter the list further most likely.
+        One way to do that is to eliminate any ingredient that only appears once
+        in recipes (so delete all non core ingredients that initially had 
+        len(item[1] above as == 1)).
+
+        We also may need to change names to match against our personal 
+        ingredients list to give them the same score as those ingredients.
+        (There is some overlap, which isn't a bad thing bc this is still 
+        ~organic~).
+        """
+        
+        return non_core_ingredients
+    
+    def regulate_inspiring_ingredient(self,ing_name,ingredient_list):
+        """
+        Given an ingredient name and list of ingredients with same name
+        and possibly different quantities, finds most common unit and averages
+        the quantities of that unit used to create one "average occurence"
+        of an ingredient.
+
+        Param: ing_name is string of ingredient name
+        param: ingredient_list is the list of the ingredients objects
+        Returns a list of len 1 with the average ingredient inside
+        """
+        units = {}
+        for ing in ingredient_list:
+            unit = ing.get_unit()
+            amount = ing.get_amount()
+            if unit not in units:
+                units[unit] = [amount]
+            else:
+                units[unit].append(amount)
+        max_key = max(units, key= lambda x: len(units[x]))
+        avg_amount = sum(units[max_key]) / len(units[max_key])
+       
+        #max key code inspired by:
+        #https://stackoverflow.com/questions/21839208/dictionary-with-lists-as-values-find-longest-list 
+        #name, amt, unit, score
+
+        #do a check for ingredients that overlap with personal set to 
+        #adjust score
+        ingred = Ingredient(ing_name, avg_amount, max_key, 1)
+    
+        return [ingred]
+
+        
+            
+        
+
+
+
+
 
     def selection(self):
         """
@@ -354,8 +440,8 @@ def main():
     #print(ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle"))
     #print(ga.generate_random())
 
-
-    ga.run()
+    ga.create_inspiring_set_ingredients()
+    #ga.run()
     #print(ga.recipes[-1].ingredients)
     #l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     #x = random.choice(l)
