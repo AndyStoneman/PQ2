@@ -181,7 +181,6 @@ class GeneticAlgorithm:
             if key in non_core_ingredients:
                 del non_core_ingredients[key]
 
-        
         #change names and scores if it matches personal ingredient list item
         if "milk" in non_core_ingredients:
             non_core_ingredients["non fat milk"] = non_core_ingredients["milk"]
@@ -189,7 +188,7 @@ class GeneticAlgorithm:
             del non_core_ingredients["milk"]
         #tragically this needs to match our typo
 
-        if "cocoa powder" in non_core_ingredients:
+        if "cocoa powder" in non_core_ingredients and "unsweetened cocoa powder" in non_core_ingredients:
             non_core_ingredients["unsweetened coco powder"] = non_core_ingredients["cocoa powder"]
             non_core_ingredients["unsweetened coco powder"].set_score(4)
             del non_core_ingredients["cocoa powder"]
@@ -519,6 +518,7 @@ def main():
         #print(rec)
 
     ga.run()
+    print(ga.positive_mutations)
     #print(ga.recipes[-1].ingredients)
     #l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     #x = random.choice(l)
