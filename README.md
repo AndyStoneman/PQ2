@@ -1,4 +1,3 @@
 # PQ2
 1) Typicality - measuring this by number of ingredients being less than some threshold value and also reward common ingredient set in our fitness function
-2) 
-3)
+2) Person (PPPPerspectives) - we have our personal ingredient set and that showcases our groups prefrences. Our system exhibits preferences and taste which are specific human cognitive traits and therefore we can view our system as a creative agent. 
