@@ -60,6 +60,7 @@ class GeneticAlgorithm:
         recombination, and mutation, as well as printing useful information at the end of each iteration.
         """
         num_iteration = 0
+        num_mutations = 0
         # Start iterations
         while num_iteration < self.iterations:
             for recipe in self.recipes:
@@ -71,26 +72,30 @@ class GeneticAlgorithm:
             self.recombination(self.recipes)
             # Mutation
             for rec in self.recipes:
+                old_fitness = rec.get_fitness()
                 probability = random.randint(0, 100)
                 if probability < 80:
-                    mutation_choice = random.randint(0, 4)
+                    mutation_choice = random.randint(1, 4)
                     '''
                     if mutation_choice == 0:
                         self.mutate_ingredient_amount(rec)
                     '''
+                    num_mutations += 1
                     if mutation_choice == 1:
                         self.mutate_ingredient_name(rec)
                     elif mutation_choice == 2:
                         self.mutate_add_recipe_ingredient(rec)
-                    '''
                     elif mutation_choice == 3:
                         self.mutate_remove_recipe_ingredient(rec)
-                    '''
+
+
                     # Normalization
                     #self.normalize_ingredient_quantities(rec)
+                rec.calculate_fitness(self.average_recipe_length)
 
-            for recipe in self.recipes:
-                recipe.calculate_fitness(self.average_recipe_length)
+                new_fitness = rec.get_fitness()
+                if old_fitness < new_fitness:
+                    self.positive_mutations += 1
 
             # Combining top 50% of new and original recipes
             self.recipes.sort(key=lambda x: x.fitness)
@@ -100,10 +105,11 @@ class GeneticAlgorithm:
             # Iteration print statements
             self.recipes.sort(key=lambda x: x.fitness)
             self.recipes = new_generation
-            print(self.recipes[-1])
             print("ITERATION: " + str(num_iteration + 1) + "\nFittest recipe:\nName: " + str(self.recipes[-1].get_name()) +
                   "\nFitness: " + str(self.recipes[-1].get_fitness()))
+            print(self.recipes[-1])
             num_iteration += 1
+        self.positive_mutations /= num_mutations
 
     def create_common_list(self):
         """
@@ -238,13 +244,6 @@ class GeneticAlgorithm:
     
         return ingred
 
-        
-            
-        
-
-
-
-
 
     def selection(self):
         """
@@ -371,6 +370,8 @@ class GeneticAlgorithm:
             if ingredient_to_remove.get_name() not in common_list:
                 recipe.remove_ingredient(ingredient_to_remove)
                 break
+            else:
+                ingredient_to_remove = random.choice(recipe.ingredients)
             count += 1
 
         while not recipe.add_ingredient(new_ingredient):
@@ -406,9 +407,7 @@ class GeneticAlgorithm:
                 #new_ingredient = random.choice(personal_items.ingredients)
                 new_ingredient = random.choice(all_items)
         
-        new_fitness = recipe.get_fitness()
-        if old_fitness < new_fitness:
-            self.positive_mutations += 1
+
         
         #if recipe old fitness < recipe new fitness, we count this as a positive mutation
     
@@ -419,8 +418,24 @@ class GeneticAlgorithm:
         Args:
              recipe (Recipe): The recipe that is having one of its ingredients mutated.
         """
+
+        common_dict = [('baking soda', 50), ('baking powder', 50), \
+                       ('vanilla extract', 50), \
+                       ('sugar', 51), ('granulated sugar', 30),
+                       ('salt', 54), ('egg', 55), ('butter', 60), \
+                       ('all-purpose flour', 73)]
+        common_list = []
+        for k, v in common_dict:
+            common_list.append(k)
         del_ingredient = random.choice(recipe.ingredients)
-        recipe.remove_ingredient(del_ingredient)
+        while del_ingredient.get_name() in common_list:
+            del_ingredient = random.choice(recipe.ingredients)
+            if del_ingredient.get_name() not in common_list:
+                recipe.remove_ingredient(del_ingredient)
+                break
+            else:
+                del_ingredient = random.choice(recipe.ingredients)
+
 
     def normalize_ingredient_quantities(self, recipe, amt=100.0):
         """
@@ -518,7 +533,7 @@ def main():
         #print(rec)
 
     ga.run()
-    print(ga.positive_mutations)
+    print("Percentage of positive mutations: " + str(round(ga.positive_mutations * 100, 2)) + "%")
     #print(ga.recipes[-1].ingredients)
     #l = ga.load_recipe_list_from_file("recipe_objects_inspiring.pickle")
     #x = random.choice(l)

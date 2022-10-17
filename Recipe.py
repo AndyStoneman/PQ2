@@ -130,8 +130,8 @@ class Recipe:
         #^^we changed to 'sugar' but may be issues w brown sugar, etc. 
         #print(self.get_ingredient_names())
         #use common list method in future !
-        for k in common_dict:
-                if k in self.get_ingredient_names():
+        for i in common_dict:
+                if i in self.get_ingredient_names():
                     common_set_appearances += 1
 
 
@@ -150,7 +150,7 @@ class Recipe:
             #print(personal)
             for ing in personal.ingredients:
                 if ing.get_name() in self.get_ingredient_names():
-                    special_count += abs(ing.score) #reward the polarizing
+                    special_count += ing.score #reward the polarizing
 
         difference = abs(len(self.ingredients) - avg_recipe_length)
         self.fitness = (1 + special_count * requiredIngredients) * (1 / difference)
