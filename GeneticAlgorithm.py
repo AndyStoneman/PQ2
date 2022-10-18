@@ -428,14 +428,15 @@ class GeneticAlgorithm:
         for k, v in common_dict:
             common_list.append(k)
         del_ingredient = random.choice(recipe.ingredients)
+
         while del_ingredient.get_name() in common_list:
             del_ingredient = random.choice(recipe.ingredients)
-            if del_ingredient.get_name() not in common_list:
-                recipe.remove_ingredient(del_ingredient)
-                break
-            else:
-                del_ingredient = random.choice(recipe.ingredients)
-
+            
+        #now that the name is not in common list...?
+        #print("We'll actually delete ", del_ingredient)
+        recipe.remove_ingredient(del_ingredient)  
+        #print("recipe should be ", recipe)
+   
 
     def normalize_ingredient_quantities(self, recipe, amt=100.0):
         """
