@@ -102,59 +102,37 @@ class Recipe:
         return ingred_obj
 
     def calculate_fitness(self, avg_recipe_length):
-        # determine variation of elements NOT in common set
         """
-        Common set
-        [('baking powder', 26), ('cinnamon', 29), ('vanilla extract', 50), \
-            ('granulated sugar', 51), \
-            ('baking soda', 53), ('salt', 54), ('egg', 55), ('butter', 60),\
-                 ('all-purpose flour', 73)]
+        Calculates and rewards recipes that have 6 core ingredients, personal ingredients that have high scores, 
+        and are under the threshold value which represents the average number of ingredients per recipe. 
+
+        Args:
+            avg_recipe_length (int): Average number of ingredients per recipe from our inspiring set. 
         """
+        
         common_set_appearances = 0
-        #set up keys
-        #common list
         common_dict = ['baking soda', 'baking powder',\
              'vanilla extract', \
             'sugar',
              'salt', 'egg', 'butter',\
                  'all-purpose flour']
 
-        #^^we changed to 'sugar' but may be issues w brown sugar, etc. 
-        #print(self.get_ingredient_names())
-        #use common list method in future !
         for i in common_dict:
                 if i in self.get_ingredient_names():
                     common_set_appearances += 1
 
-
         requiredIngredients = common_set_appearances / (len(common_dict))
-        #print(requiredIngredients)
-
-        #Do we want to restrain our total ingredient count per recipe to some range of values? Like 10 - 12? 
-        #Would we want to create an instance of the GroupIngredients class here? 
-
-        #personal = GroupIngredients("personalIngredients.csv") 
         file = "personalIngredientsList.pickle"
 
         special_count = 0
         with open(file, "rb") as f:
-            personal = pickle.load(f) #load in personal ingredient obj
-            #print(personal)
+            personal = pickle.load(f) #load personal ingredient object
             for ing in personal.ingredients:
                 if ing.get_name() in self.get_ingredient_names():
                     special_count += ing.score #reward the polarizing
 
         difference = abs(len(self.ingredients) - avg_recipe_length)
         self.fitness = (1 + special_count * requiredIngredients) * (1 / difference)
-        #print("THIS IS FITNESS: " + str(self.fitness))
-        ideal_num_ingreds = 0
-
-
-
-
-        #print("Special count", special_count)
-        #print("score", requiredIngredients * special_count)
-
 
     def get_fitness(self):
         """
@@ -227,10 +205,3 @@ class Recipe:
     def __repr__(self):
         """Returns a blueprint for a Recipe object."""
         return "Recipe('{0}', {1}, {2})\n".format(self.name, self.ingredients, self.filename)
-
-# FOR TESTING (commented out)
-    
-#r = Recipe("gingerbread cookies", [],"recipes/Gingerbread Cookies1.txt")
-#r2 = Recipe("Wyoming cowboy cookies", [], "recipes/Wyoming Cowboy Cookies3.txt")
-#print(r)
-#print(r2)
