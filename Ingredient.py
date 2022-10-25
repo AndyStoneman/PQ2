@@ -1,8 +1,4 @@
-#For ingredients, we may want to add a "Unit" property 
-#I have gone ahead and done so 
 """
-Authors: Abby, Amanda 
-
 Creates an Ingredient class with name, amount, and unit properties.
 """
 class Ingredient:
@@ -21,13 +17,14 @@ class Ingredient:
 
     def __repr__(self):
         """Lets us make an object of the same value."""
-        hasScore = hasattr(self, 'score')
-        addToRepr = 1
-        if hasScore:
-            addToRepr = self.score
-            
-        return "Ingredient('{0}', {1}, '{2}', {3})\n".format(self.name, self.amount,
-        self.unit, addToRepr)
+        has_score = hasattr(self, 'score')
+        add_to_repr = 1
+        if has_score:
+            add_to_repr = self.score
+        return "Ingredient('{0}', {1}, '{2}', {3})\n".format(self.name,
+                                                             self.amount,
+                                                             self.unit,
+                                                             add_to_repr)
 
     def set_amount(self, new_amount):
         self.amount = new_amount

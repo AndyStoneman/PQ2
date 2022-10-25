@@ -475,7 +475,7 @@ class GeneticAlgorithm:
 
 
 def main():
-    ga = GeneticAlgorithm(1000, "recipes/" + "*.txt")
+    ga = GeneticAlgorithm(50, "recipes/" + "*.txt")
 
     print(ga.create_inspiring_set_ingredients())
 

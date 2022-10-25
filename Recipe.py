@@ -1,4 +1,4 @@
-import Ingredient
+from Ingredient import Ingredient
 import pickle
 
 class Recipe:
@@ -57,9 +57,13 @@ class Recipe:
     
     def parse_line_for_recipe(self, line):
         """
-        Parses line input into ingredient obj
-        Returns ingredient if parseable, None if empty string passed.
-        Two modes, csv for csv formatted files and other for the way Andy did it.
+        Parses line input into ingredient object.
+
+        Args:
+            line (str): An ingredient in a line of a recipe file.
+        Returns:
+            Ingredient object with information from the specified line, and
+            None if the string is empty.
         """
 
         ingredient = line.split(",")
@@ -103,36 +107,36 @@ class Recipe:
 
     def calculate_fitness(self, avg_recipe_length):
         """
-        Calculates and rewards recipes that have 6 core ingredients, personal ingredients that have high scores, 
-        and are under the threshold value which represents the average number of ingredients per recipe. 
+        Calculates and rewards recipes that have 6 core ingredients, personal
+        ingredients that have high scores, and are under the threshold value
+        which represents the average number of ingredients per recipe.
 
         Args:
-            avg_recipe_length (int): Average number of ingredients per recipe from our inspiring set. 
+            avg_recipe_length (int): Average number of ingredients per recipe
+            from our inspiring set.
         """
         
         common_set_appearances = 0
-        common_dict = ['baking soda', 'baking powder',\
-             'vanilla extract', \
-            'sugar',
-             'salt', 'egg', 'butter',\
-                 'all-purpose flour']
+        common_dict = ['baking soda', 'baking powder', 'vanilla extract',
+                       'sugar', 'salt', 'egg', 'butter', 'all-purpose flour']
 
         for i in common_dict:
-                if i in self.get_ingredient_names():
-                    common_set_appearances += 1
+            if i in self.get_ingredient_names():
+                common_set_appearances += 1
 
-        requiredIngredients = common_set_appearances / (len(common_dict))
+        required_ingredients = common_set_appearances / (len(common_dict))
         file = "personalIngredientsList.pickle"
 
         special_count = 0
         with open(file, "rb") as f:
-            personal = pickle.load(f) #load personal ingredient object
+            personal = pickle.load(f)  # Load personal ingredient object
             for ing in personal.ingredients:
                 if ing.get_name() in self.get_ingredient_names():
-                    special_count += ing.score #reward the polarizing
+                    special_count += ing.score  # Reward the polarizing
 
         difference = abs(len(self.ingredients) - avg_recipe_length)
-        self.fitness = (1 + special_count * requiredIngredients) * (1 / difference)
+        self.fitness = (1 + special_count * required_ingredients) * \
+                       (1 / difference)
 
     def get_fitness(self):
         """
