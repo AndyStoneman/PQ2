@@ -1,10 +1,5 @@
-from operator import truediv
-from Ingredient import Ingredient
-from GroupIngredients import GroupIngredients
-import random
+import Ingredient
 import pickle
-
-#import glob
 
 class Recipe:
     """
@@ -38,6 +33,7 @@ class Recipe:
         self.filename = filename
         self.ingredients = []
         self.ingredient_names = []
+
         if filename != "":
             self.filename_components = self.filename.split(".")
             self.name = self.filename_components[0][8:]#8 to allow for "recipes"
@@ -65,7 +61,6 @@ class Recipe:
         Returns ingredient if parseable, None if empty string passed.
         Two modes, csv for csv formatted files and other for the way Andy did it.
         """
-
 
         ingredient = line.split(",")
         # format ingredient as name, amount, unit
@@ -106,9 +101,6 @@ class Recipe:
        
         return ingred_obj
 
-    def read_unique(self): 
-        #Add this functionality, so we can read the CSV file in 
-        return None
     def calculate_fitness(self, avg_recipe_length):
         # determine variation of elements NOT in common set
         """

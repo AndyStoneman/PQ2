@@ -1,4 +1,5 @@
 from Ingredient import Ingredient 
+
 class GroupIngredients:
     def __init__(self, filename):
         self.filename = filename
