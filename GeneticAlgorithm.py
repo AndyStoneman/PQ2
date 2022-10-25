@@ -33,7 +33,7 @@ class GeneticAlgorithm:
             Helper method that removes duplicate ingredients during
             recombination process
         
-        4 different mutation submethods to change: ingredient name, ingredient
+        4 different mutation sub methods to change: ingredient name, ingredient
         amount, add or remove ingredient (each takes a recipe argument)
 
         normalize_ingredient_quantities(recipe, amt=100.0):
@@ -60,6 +60,7 @@ class GeneticAlgorithm:
         self.inspiring_set_ingredient_length = len(
             list(self.inspiring_set_ingredient_names))
         self.average_recipe_length /= self.num_files
+        self.common_list = self.create_common_list()
 
     def generate_random(self):
         return random.choice(self.recipes)
@@ -75,7 +76,8 @@ class GeneticAlgorithm:
         # Start iterations
         while num_iteration < self.iterations:
             for recipe in self.recipes:
-                recipe.calculate_fitness(self.average_recipe_length)
+                recipe.calculate_fitness(self.average_recipe_length,
+                                         self.common_list)
             original_list = self.recipes
             self.selection()
             self.recombination(self.recipes)
@@ -93,14 +95,16 @@ class GeneticAlgorithm:
                     elif mutation_choice == 3:
                         self.mutate_remove_recipe_ingredient(rec)
 
-                    rec.calculate_fitness(self.average_recipe_length)
+                    rec.calculate_fitness(self.average_recipe_length,
+                                          self.common_list)
 
                     # Count positive mutations
                     new_fitness = rec.get_fitness()
                     if old_fitness < new_fitness:
                         self.positive_mutations += 1
 
-                rec.calculate_fitness(self.average_recipe_length)
+                rec.calculate_fitness(self.average_recipe_length,
+                                      self.common_list)
 
             # Combining top 50% of new and original recipes
             self.recipes.sort(key=lambda x: x.fitness)
@@ -130,8 +134,13 @@ class GeneticAlgorithm:
             for ingredient in ingredients:
                 ingredient_amounts[ingredient] = ingredient_amounts. \
                                                      get(ingredient, 0) + 1
-        common_list = sorted(ingredient_amounts.items(),
+        common_dict = sorted(ingredient_amounts.items(),
                              key=lambda item: item[1])[-9:]
+        common_list = []
+        for k, v in common_dict:
+            common_list.append(k)
+        # Remove cinnamon–we don't consider it as common ingredient
+        common_list.remove("cinnamon")
         return common_list
 
     def create_inspiring_set_ingredients(self):
@@ -141,15 +150,11 @@ class GeneticAlgorithm:
         mutation.
         Returns a list of 'non-core' ingredients.
         """
-        common_list_ing_names = ['baking soda', 'baking powder',
-                                 'vanilla extract', 'sugar',
-                                 'granulated sugar', 'salt', 'egg',
-                                 'butter', 'all-purpose flour']
         non_core_ingredients = {}
         for rec in self.recipes:
             for ingredient in rec.ingredients:
                 name = ingredient.get_name()
-                if name not in common_list_ing_names:
+                if name not in self.common_list:
                     if name not in non_core_ingredients:
                         non_core_ingredients[name] = [ingredient]
                     elif name in non_core_ingredients:
@@ -164,21 +169,6 @@ class GeneticAlgorithm:
             if len(item[1]) > 1:  # second part of tuple
                 new_item = self.regulate_inspiring_ingredient(item[0], item[1])
                 non_core_ingredients[item[0]] = new_item
-
-        """
-        Here, we'll want to filter the list further most likely.
-        One way to do that is to eliminate any ingredient that only appears 
-        once in recipes (so delete all non core ingredients that initially had 
-        len(item[1] above as == 1)). This change has been implemented below
-        We also may need to change names to match against our personal 
-        ingredients list to give them the same score as those ingredients.
-        (There is some overlap, which isn't a bad thing bc this is still 
-        ~organic~).
-        """
-
-        # manual filtering, water came from a frosting recipe
-        # we previously had 3 different chocolate chip entries
-        # all with about 1.5 cups, let's consolidate
 
         manual_keys = ["water", "eggs", "salted butter",
                        'semisweet chocolate chips',
@@ -354,14 +344,10 @@ class GeneticAlgorithm:
         new_ingredient = random.choice(all_items)
         ingredient_to_remove = random.choice(recipe.ingredients)
 
-        common_list = ['baking soda', 'baking powder', 'vanilla extract',
-                       'sugar', 'granulated sugar', 'salt', 'egg',
-                       'butter', 'all-purpose flour']
-
         count = 0
-        while ingredient_to_remove.get_name() in common_list and count == 8:
+        while ingredient_to_remove.get_name() in self.common_list and count == 8:
             ingredient_to_remove = random.choice(recipe.ingredients)
-            if ingredient_to_remove.get_name() not in common_list:
+            if ingredient_to_remove.get_name() not in self.common_list:
                 recipe.remove_ingredient(ingredient_to_remove)
                 break
             else:
@@ -408,12 +394,8 @@ class GeneticAlgorithm:
              mutated.
         """
 
-        common_list = ['baking soda', 'baking powder', 'vanilla extract',
-                       'sugar', 'granulated sugar', 'salt', 'egg',
-                       'butter', 'all-purpose flour']
-
         del_ingredient = random.choice(recipe.ingredients)
-        while del_ingredient.get_name() in common_list:
+        while del_ingredient.get_name() in self.common_list:
             del_ingredient = random.choice(recipe.ingredients)
 
         recipe.remove_ingredient(del_ingredient)
@@ -478,10 +460,10 @@ def main():
     ga = GeneticAlgorithm(50, "recipes/" + "*.txt")
 
     print(ga.create_inspiring_set_ingredients())
-
+    print(ga.create_common_list())
     ga.run()
-    print("Percentage of positive mutations: " + str(
-        round(ga.positive_mutations * 100, 2)) + "%")
+    #print("Percentage of positive mutations: " + str(
+        #round(ga.positive_mutations * 100, 2)) + "%")
 
 
 main()
