@@ -11,6 +11,7 @@ We found the most common 9 ingredients across all recipes in our inspiring set a
 
 Our GA walks through selection, recombination/crossover, as well as mutation (where we swap in ingredients, remove them, or add in something new up to an ingredient threshold, because more is not always better when it comes to ingredients in a cookie). We did not allow ingredients to be deleted through mutation because we did not want the base/core set to be edited once the core group was choosen. 
 Our fittest recipe is printed out at the end of running, alone with its fitness score and the percentage of positive mutations that contributed to the recipe turning out the way it did! We counted positive mutations by totalling the number of mutations, out of the total, that increased our fitness score and then reported that percentage. 
+We capped our number of iterations around 50, we found that after about 100 the recipes converged and we wanted quality recipes but also a variety (hence picking partway on the way up to the convergence).
 
 ## Web Scraping Process - Creating the Inspiring Set
 
@@ -38,7 +39,7 @@ Notably, oatmeal raisin cookies were excluded due to disdain from 3 of 4 group m
 We performed google searches for "`query` cookies" and "`query` cookies recipe".
 We then wrote the ingredients of these recipes to files, using the recipe_scraper python module to easily get a list of ingredients from the search.
 
-We took the top 30 links from each searcg, although not every link yielded a properly formatted recipe that worked with the recipe_scraper module and thus we didn't end up with hundreds of recipes. After, we examined the files to remove duplicate recipes (some popular recipes popped up under both queries) and
+We took the top 30 links from each search, although not every link yielded a properly formatted recipe that worked with the recipe_scraper module and thus we didn't end up with hundreds of recipes. After, we examined the files to remove duplicate recipes (some popular recipes popped up under both queries) and
 to format the list of ingredients into csv form for easy creation of Recipe objects.
 
 Once we created Recipe objects from our inspiring set, we used pickle to bundle them all up into one inspiring set file that contained a list of Recipes, so that we could save the initial set in one place and not have to parse each file into a Recipe object each time we wanted to run our program.
@@ -51,6 +52,7 @@ We created a list of personal ingredients and then every person voted 1 (include
 ## Criteria for Recipes - Ensuring Some Typicality
 
 We decided due to our very large inspiring set that normalizing ingredient values would be difficult. Luckily, the majority of our recipes has similar serving sizes. We also counted the occurence of different ingredients among our recipes to find our most common 9 (when trying to account for differences in ingredients that were semantically the same but written differently, eg in most recipes flour and all-purpose flour). 
+We used a function to find these but then we hard coded the common set to prevent making expensive calls to the common set finding algorithm which went through the whole recipe set.
 We came up with the following dictionary of counts:
 ```
 common_dict = [('baking soda', 50), ('baking powder', 50), \
