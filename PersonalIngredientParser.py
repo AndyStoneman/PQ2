@@ -1,10 +1,11 @@
 from Ingredient import Ingredient
 """
-PersonalIngredientParser was used to parse a csv of personal ingredients and their respective ratings.
-After originally parsing the file, PersonalIngredientParser is not used. It is merely
-included for the sake of understanding our generation process. It could be used by future users
-to generate their own personal ingredient lists, although the resulting file will have to be replaced
-in the Genetic Algorithm code.
+PersonalIngredientParser was used to parse a csv of personal ingredients and 
+their respective ratings. After originally parsing the file, 
+PersonalIngredientParser is not used. It is merely included for the sake of 
+understanding our generation process. It could be used by future users
+to generate their own personal ingredient lists, although the resulting file 
+will have to be replaced in the Genetic Algorithm code.
 """
 
 class PersonalIngredientParser:
