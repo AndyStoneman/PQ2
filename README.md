@@ -37,7 +37,7 @@ queries = [
 Notably, oatmeal raisin cookies were excluded due to disdain from 3 of 4 group members.
 
 We performed google searches for "`query` cookies" and "`query` cookies recipe".
-We then wrote the ingredients of these recipes to files, using the recipe_scraper python module to easily get a list of ingredients from the search.
+We then wrote the ingredients of these recipes to files, using the [recipe_scraper](https://github.com/hhursev/recipe-scrapers) python module to easily get a list of ingredients from the search.
 
 We took the top 30 links from each search, although not every link yielded a properly formatted recipe that worked with the recipe_scraper module and thus we didn't end up with hundreds of recipes. After, we examined the files to remove duplicate recipes (some popular recipes popped up under both queries) and
 to format the list of ingredients into csv form for easy creation of Recipe objects.
@@ -45,9 +45,14 @@ to format the list of ingredients into csv form for easy creation of Recipe obje
 Once we created Recipe objects from our inspiring set, we used pickle to bundle them all up into one inspiring set file that contained a list of Recipes, so that we could save the initial set in one place and not have to parse each file into a Recipe object each time we wanted to run our program.
 (We had a read-from-pickle- file method to get the list back when we needed it).
 
+## Getting Ingredients from Common Set for Mutation
+
+In addition to a list of personal ingredients (mentioned below), we wanted to allow ingredients already existing in the inspiring set recipes (but not in the common set) to be mutated in, to allow for more variety and typicality (after all, these are standard cookie recipes!).
+We had two functions that accomplished this, one of which created one prototypical version of each unique ingredient-- the dominant unit of that ingredient was selected (ie if we had 3 recipes that included "cinnamon", and they have 3tsp, 1tbsp, and 1tsp, tsps would win) and then the quantities used in the inspiring set were averaged to create the average version (in our cinnamon example, this would become 2tsp). 
+
 ## Creating our Personal Ingredient Set - PPPPerspectives (Person)
 
-We created a list of personal ingredients and then every person voted 1 (include), 0 (indifferent), or -1 (exclude). That meant every score was within the range -4 to 4. Some very polarizing ingredients like coffee or oatmeal had scores of 1, 0, or 1 as well as neutral ingredients like brown sugar. This way, the scores represent how important individual ingredients were to our group members, made the final recipe personally meaningful, and also revealed different tastes among group members. The personal ingredient set introduced some variety into the ingredients, as well as, provide more parameters for the fitness function. We should view our system as creative under the PPPPerspectives "Person/Producer" metric because our system has inherent human traits - preference for certain ingredients over others. Our system would be different for any other group of teammates and that makes this criteria meaningful for our particular creative system. 
+We created a list of personal ingredients and then every person voted 1 (include), 0 (indifferent), or -1 (exclude). That meant every score was within the range -4 to 4. Some very polarizing ingredients like coffee or oatmeal had scores of 1, 0, or 1 as well as neutral ingredients like brown sugar. This way, the scores represent how important individual ingredients were to our group members, made the final recipe personally meaningful, and also revealed different tastes among group members. The personal ingredient set introduced some variety into the ingredients, as well as, provide more parameters for the fitness function. We should view our system as creative under the PPPPerspectives "Person/Producer" metric because our system has inherent human traits - preference for certain ingredients over others. Our system would be different for any other group of teammates and that makes this criteria meaningful for our particular creative system.
 
 ## Criteria for Recipes - Ensuring Some Typicality
 
