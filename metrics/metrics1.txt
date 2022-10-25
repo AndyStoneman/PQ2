@@ -1,0 +1,782 @@
+Metrics 1 Analysis: We can see that recipes have a consistent number of 
+ingredients as we continue to run the system, and that fitness does increase,
+even as common set ingredients remain (ie with the addition of some of our 
+personal ingredients, or the few inspiring set ingredients that overlapped with 
+the personal set so may appear with a different quantity than in personal set.)
+
+Scroll to bottom for iteration 50 :) BUt have placed it here so that you can see it more easily.
+
+ITERATION: 50
+Fittest recipe:
+Name: new_recipe_0
+Fitness: 165.0000000000006
+new_recipe_0: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+Percentage of positive mutations: 18.22%
+
+
+
+
+-----
+
+
+ITERATION: 1
+Fittest recipe:
+Name: new_recipe_61
+Fitness: 60.00000000000021
+new_recipe_61: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('dark brown sugar', 0.75, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('semi-sweet chocolate chips', 1.25, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 2
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 67.50000000000024
+new_recipe_39: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('semi-sweet chocolate chips', 1.25, 'cup', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+]
+ITERATION: 3
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 67.50000000000024
+new_recipe_39: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('semi-sweet chocolate chips', 1.25, 'cup', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+]
+ITERATION: 4
+Fittest recipe:
+Name: new_recipe_45
+Fitness: 71.25000000000026
+new_recipe_45: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('dark brown sugar', 0.75, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('semi-sweet chocolate chips', 1.25, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+]
+ITERATION: 5
+Fittest recipe:
+Name: new_recipe_45
+Fitness: 71.25000000000026
+new_recipe_45: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('dark brown sugar', 0.75, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('semi-sweet chocolate chips', 1.25, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+]
+ITERATION: 6
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 7
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 8
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 9
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 10
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 11
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 12
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 13
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 14
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 15
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 16
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 17
+Fittest recipe:
+Name: new_recipe_64
+Fitness: 105.00000000000037
+new_recipe_64: [Ingredient('all-purpose flour', 8.5, 'oz', 1)
+, Ingredient('all-purpose flour', 1.666, 'cup', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('sea salt', 0.5, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 18
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 19
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 20
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 21
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 22
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 23
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 24
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 25
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 116.25000000000041
+new_recipe_20: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('zested lemons', 2.0, 'tsp', 1)
+]
+ITERATION: 26
+Fittest recipe:
+Name: new_recipe_53
+Fitness: 127.50000000000045
+new_recipe_53: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('shortening', 0.5833333333333334, 'cup', 1)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 27
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 138.75000000000048
+new_recipe_47: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('apple pie filling', 2.0, 'cups', 3.0)
+]
+ITERATION: 28
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 138.75000000000048
+new_recipe_47: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('apple pie filling', 2.0, 'cups', 3.0)
+]
+ITERATION: 29
+Fittest recipe:
+Name: new_recipe_14
+Fitness: 150.00000000000054
+new_recipe_14: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+]
+ITERATION: 30
+Fittest recipe:
+Name: new_recipe_14
+Fitness: 150.00000000000054
+new_recipe_14: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+]
+ITERATION: 31
+Fittest recipe:
+Name: new_recipe_14
+Fitness: 150.00000000000054
+new_recipe_14: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+]
+ITERATION: 32
+Fittest recipe:
+Name: new_recipe_14
+Fitness: 150.00000000000054
+new_recipe_14: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+]
+ITERATION: 33
+Fittest recipe:
+Name: new_recipe_14
+Fitness: 150.00000000000054
+new_recipe_14: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+]
+ITERATION: 34
+Fittest recipe:
+Name: new_recipe_14
+Fitness: 150.00000000000054
+new_recipe_14: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.5, 'tsp', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+]
+ITERATION: 35
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 36
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 37
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 38
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 39
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 40
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 41
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 42
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 43
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 44
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 45
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 46
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 47
+Fittest recipe:
+Name: new_recipe_34
+Fitness: 157.50000000000057
+new_recipe_34: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('heavy cream', 3.0, 'tsp', 3.0)
+]
+ITERATION: 48
+Fittest recipe:
+Name: new_recipe_0
+Fitness: 165.0000000000006
+new_recipe_0: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 49
+Fittest recipe:
+Name: new_recipe_0
+Fitness: 165.0000000000006
+new_recipe_0: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+ITERATION: 50
+Fittest recipe:
+Name: new_recipe_0
+Fitness: 165.0000000000006
+new_recipe_0: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('butter', 0.75, 'cup', 1)
+, Ingredient('salt', 0.75, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+, Ingredient('bourbon', 0.25, 'cup', 4.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+]
+Percentage of positive mutations: 18.22%

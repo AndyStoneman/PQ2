@@ -1,0 +1,772 @@
+Again, #50 for convenience.
+
+ITERATION: 50
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+Percentage of positive mutations: 11.6%
+
+
+------
+ITERATION: 1
+Fittest recipe:
+Name: new_recipe_7
+Fitness: 60.00000000000021
+new_recipe_7: [Ingredient('white sugar', 2.0, 'cup', 1)
+, Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('milk', 3.0, 'tbsp', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('all-purpose flour', 1.25, 'cup', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+]
+ITERATION: 2
+Fittest recipe:
+Name: new_recipe_62
+Fitness: 90.00000000000031
+new_recipe_62: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('all-purpose flour', 3.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+]
+ITERATION: 3
+Fittest recipe:
+Name: new_recipe_62
+Fitness: 90.00000000000031
+new_recipe_62: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('all-purpose flour', 3.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+]
+ITERATION: 4
+Fittest recipe:
+Name: new_recipe_62
+Fitness: 90.00000000000031
+new_recipe_62: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('all-purpose flour', 3.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+]
+ITERATION: 5
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 105.00000000000037
+new_recipe_8: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('margarine', 0.75, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 6
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 105.00000000000037
+new_recipe_8: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('margarine', 0.75, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 7
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 105.00000000000037
+new_recipe_8: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('margarine', 0.75, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 8
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 105.00000000000037
+new_recipe_8: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('margarine', 0.75, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('creamy peanut butter', 1.0, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 9
+Fittest recipe:
+Name: new_recipe_28
+Fitness: 108.75000000000038
+new_recipe_28: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.66, 'cup', 1)
+, Ingredient('brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('maple sugar', 1.0, 'cup', 2.0)
+]
+ITERATION: 10
+Fittest recipe:
+Name: new_recipe_28
+Fitness: 108.75000000000038
+new_recipe_28: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.66, 'cup', 1)
+, Ingredient('brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('maple sugar', 1.0, 'cup', 2.0)
+]
+ITERATION: 11
+Fittest recipe:
+Name: new_recipe_28
+Fitness: 108.75000000000038
+new_recipe_28: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.66, 'cup', 1)
+, Ingredient('brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('maple sugar', 1.0, 'cup', 2.0)
+]
+ITERATION: 12
+Fittest recipe:
+Name: new_recipe_28
+Fitness: 108.75000000000038
+new_recipe_28: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.66, 'cup', 1)
+, Ingredient('brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('maple sugar', 1.0, 'cup', 2.0)
+]
+ITERATION: 13
+Fittest recipe:
+Name: new_recipe_28
+Fitness: 108.75000000000038
+new_recipe_28: [Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.66, 'cup', 1)
+, Ingredient('brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('maple sugar', 1.0, 'cup', 2.0)
+]
+ITERATION: 14
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 15
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 16
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 17
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 18
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 19
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 20
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 21
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 22
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 23
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 24
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 25
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 26
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 27
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 28
+Fittest recipe:
+Name: new_recipe_27
+Fitness: 127.50000000000045
+new_recipe_27: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('packed light brown sugar', 0.75, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+]
+ITERATION: 29
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 30
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 31
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 32
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 33
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 34
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 35
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 36
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 37
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 38
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 39
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 40
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 41
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 42
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 43
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 44
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 45
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 46
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 47
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 48
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 49
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+ITERATION: 50
+Fittest recipe:
+Name: new_recipe_63
+Fitness: 165.0000000000006
+new_recipe_63: [Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 1.0, 'cup', 1)
+, Ingredient('egg', 2.0, 'large', 1)
+, Ingredient('vanilla extract', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.75, 'tsp', 1)
+, Ingredient('salt', 0.25, 'tsp', 1)
+, Ingredient('seasalt flakes', 1.0, 'pinch', 4.0)
+, Ingredient('canned pumpkin puree', 1.0, 'cup', 4.0)
+, Ingredient('nutella', 1.0, 'tsp', 4.0)
+, Ingredient('unsweetened coco powder', 2.5, 'tsp', 4.0)
+]
+Percentage of positive mutations: 11.6%

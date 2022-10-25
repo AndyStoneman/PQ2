@@ -1,0 +1,776 @@
+
+50th:
+ITERATION: 50
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+Percentage of positive mutations: 10.3%
+
+We can see here that there were fewer positive mutations overall, this is 
+somewhat evident in that this 11th recipe stayed dominant for a while. (after 33).
+
+
+------
+
+ITERATION: 1
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 54.37500000000019
+new_recipe_20: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('light brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+]
+ITERATION: 2
+Fittest recipe:
+Name: new_recipe_20
+Fitness: 54.37500000000019
+new_recipe_20: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('light brown sugar', 0.5, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('vanilla extract', 1.0, 'tsp', 1)
+, Ingredient('all-purpose flour', 1.5, 'cup', 1)
+, Ingredient('baking soda', 0.5, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+]
+ITERATION: 3
+Fittest recipe:
+Name: new_recipe_48
+Fitness: 61.87500000000022
+new_recipe_48: [Ingredient('white sugar', 1.5, 'cup', 1)
+, Ingredient('margarine', 0.75, 'cup', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('molasses', 0.25, 'cup', 1)
+, Ingredient('all-purpose flour', 2.0, 'cup', 1)
+, Ingredient('baking soda', 2.0, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+]
+ITERATION: 4
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 80.62500000000028
+new_recipe_39: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('finely chopped fresh rosemary', 1.0, 'tsp', 2.0)
+]
+ITERATION: 5
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 90.00000000000031
+new_recipe_47: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+]
+ITERATION: 6
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 90.00000000000031
+new_recipe_47: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+]
+ITERATION: 7
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 90.00000000000031
+new_recipe_47: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+]
+ITERATION: 8
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 90.00000000000031
+new_recipe_47: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+]
+ITERATION: 9
+Fittest recipe:
+Name: new_recipe_47
+Fitness: 90.00000000000031
+new_recipe_47: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+]
+ITERATION: 10
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 99.37500000000036
+new_recipe_39: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 11
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 99.37500000000036
+new_recipe_39: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 12
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 99.37500000000036
+new_recipe_39: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 13
+Fittest recipe:
+Name: new_recipe_39
+Fitness: 99.37500000000036
+new_recipe_39: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('cardamom', 1.25, 'tsp', 3.0)
+, Ingredient('graham crackers', 5.0, 'oz', 2.0)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 14
+Fittest recipe:
+Name: new_recipe_41
+Fitness: 118.12500000000043
+new_recipe_41: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 15
+Fittest recipe:
+Name: new_recipe_41
+Fitness: 118.12500000000043
+new_recipe_41: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 16
+Fittest recipe:
+Name: new_recipe_41
+Fitness: 118.12500000000043
+new_recipe_41: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 17
+Fittest recipe:
+Name: new_recipe_41
+Fitness: 118.12500000000043
+new_recipe_41: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 18
+Fittest recipe:
+Name: new_recipe_41
+Fitness: 118.12500000000043
+new_recipe_41: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 19
+Fittest recipe:
+Name: new_recipe_41
+Fitness: 118.12500000000043
+new_recipe_41: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('cinnamon', 1.25, 'tsp', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+]
+ITERATION: 20
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 21
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 22
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 23
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 24
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 25
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 26
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 27
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 28
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 29
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 30
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 31
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 32
+Fittest recipe:
+Name: new_recipe_8
+Fitness: 127.50000000000045
+new_recipe_8: [Ingredient('butter', 0.5, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('egg', 1.0, 'large', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('granulated sugar', 0.5, 'cup', 1)
+, Ingredient('baking powder', 1.0, 'tsp', 1)
+, Ingredient('nutmeg', 1.0, 'tsp', 4.0)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 1)
+, Ingredient('chopped reece's peanut butter cups', 1.0, 'cup', 3.0)
+, Ingredient('coconut butter', 0.25, 'cup', 2.0)
+]
+ITERATION: 33
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 34
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 35
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 36
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 37
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 38
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 39
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 40
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 41
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 42
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 43
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 44
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 45
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 46
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 47
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 48
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 49
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+ITERATION: 50
+Fittest recipe:
+Name: new_recipe_11
+Fitness: 146.2500000000005
+new_recipe_11: [Ingredient('all-purpose flour', 2.25, 'cup', 1)
+, Ingredient('baking soda', 1.0, 'tsp', 1)
+, Ingredient('salt', 0.5, 'tsp', 1)
+, Ingredient('butter', 1.0, 'cup', 1)
+, Ingredient('granulated sugar', 0.75, 'cup', 1)
+, Ingredient('baking powder', 0.25, 'tsp', 1)
+, Ingredient('pumpkin pie spice', 1.5, 'tsp', 3.0)
+, Ingredient('nutmeg', 1.0, 'tsp', 4)
+, Ingredient('nutella', 1.0, 'tsp', 1)
+, Ingredient('zested lemons', 2.0, 'tsp', 3.0)
+]
+Percentage of positive mutations: 10.3%
