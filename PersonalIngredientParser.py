@@ -1,12 +1,16 @@
 from Ingredient import Ingredient
 """
-Creates a Group Ingredient class with name, amount, unit, and score properties.
+PersonalIngredientParser was used to parse a csv of personal ingredients and their respective ratings.
+After originally parsing the file, PersonalIngredientParser is not used. It is merely
+included for the sake of understanding our generation process. It could be used by future users
+to generate their own personal ingredient lists, although the resulting file will have to be replaced
+in the Genetic Algorithm code.
 """
 
-class GroupIngredients:
+class PersonalIngredientParser:
     def __init__(self, filename):
         """
-        Creates group ingreident object. 
+        Creates group ingredient object. 
         Seperate from the Ingredient class because we wanted to add the "score" parameter.   
         """
         self.filename = filename

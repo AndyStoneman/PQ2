@@ -105,7 +105,7 @@ class Recipe:
        
         return ingred_obj
 
-    def calculate_fitness(self, avg_recipe_length):
+    def calculate_fitness(self, avg_recipe_length, common_list):
         """
         Calculates and rewards recipes that have 6 core ingredients, personal
         ingredients that have high scores, and are under the threshold value
@@ -114,17 +114,19 @@ class Recipe:
         Args:
             avg_recipe_length (int): Average number of ingredients per recipe
             from our inspiring set.
+
+            common_list (list): List of common set ingredients given by GA.
         """
         
         common_set_appearances = 0
         common_dict = ['baking soda', 'baking powder', 'vanilla extract',
                        'sugar', 'salt', 'egg', 'butter', 'all-purpose flour']
 
-        for i in common_dict:
+        for i in common_list:
             if i in self.get_ingredient_names():
                 common_set_appearances += 1
 
-        required_ingredients = common_set_appearances / (len(common_dict))
+        required_ingredients = common_set_appearances / (len(common_list))
         file = "personalIngredientsList.pickle"
 
         special_count = 0
