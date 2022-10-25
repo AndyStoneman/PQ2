@@ -27,22 +27,51 @@ class Ingredient:
                                                              add_to_repr)
 
     def set_amount(self, new_amount):
+        """Setter method for the amount of an ingredient."""
         self.amount = new_amount
 
     def get_amount(self):
+        """
+        Getter method for the amount of an ingredient.
+
+        Returns:
+            Amount of an ingredient.
+        """
         return self.amount
     
     def set_name(self, name):
+        """Setter method for the name of an ingredient."""
         self.name = name
     
     def get_name(self):
+        """
+        Getter method for the name of an ingredient.
+
+        Returns:
+            Name of an ingredient. 
+        """
         return self.name
     
     def get_unit(self):
+        """
+        Getter method for the units of an ingredient amount.
+        
+        Returns:
+            The unit of an ingredient.
+        """
         return self.unit
     
     def get_score(self):
+        """
+        Getter method for the score corresponding to an ingredient.
+        
+        Returns:
+            The score assigned to an ingredient. 
+        """
         return self.score
     
     def set_score(self,score):
-        self.score = score
+         """Setter method for the score of an ingredient."""
+         self.score = score
+
+
