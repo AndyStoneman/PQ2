@@ -62,7 +62,7 @@ class PersonalIngredientParser:
 
     def __repr__(self):
         """Returns a blueprint for a Recipe object."""
-        return "GroupIngredients('{0}', {1}, '{2}', {3})\n".format(self.name,
+        return "PersonalIngredientParser('{0}', {1}, '{2}', {3})\n".format(self.name,
                                                                    self.amount,
                                                                    self.unit,
                                                                    self.score)

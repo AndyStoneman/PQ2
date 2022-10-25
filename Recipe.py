@@ -127,7 +127,7 @@ class Recipe:
                 common_set_appearances += 1
 
         required_ingredients = common_set_appearances / (len(common_list))
-        file = "personalIngredientsList.pickle"
+        file = "personalIngredientsList2.pickle"
 
         special_count = 0
         with open(file, "rb") as f:

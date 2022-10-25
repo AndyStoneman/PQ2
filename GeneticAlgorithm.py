@@ -2,6 +2,7 @@ import glob
 import random
 from Recipe import Recipe
 from Ingredient import Ingredient
+from PersonalIngredientParser import PersonalIngredientParser
 import pickle
 
 
@@ -335,7 +336,7 @@ class GeneticAlgorithm:
         
         """
         personal_items = self.load_recipe_list_from_file(
-            "personalIngredientsList.pickle")
+            "personalIngredientsList2.pickle")
 
         all_items = personal_items.ingredients
 
@@ -371,7 +372,7 @@ class GeneticAlgorithm:
              ingredients.
         """
         personal_items = self.load_recipe_list_from_file(
-            "personalIngredientsList.pickle")
+            "personalIngredientsList2.pickle")
 
 
         all_items = personal_items.ingredients
@@ -434,10 +435,17 @@ class GeneticAlgorithm:
 def main():
     ga = GeneticAlgorithm(50, "recipes/" + "*.txt")
 
+    personalIngredients = PersonalIngredientParser("personalIngredients.csv")
+    ga.save_recipe_to_file(personalIngredients, "personalIngredientsList2.pickle" )
+
+    print("PERSONAL",ga.load_recipe_list_from_file("personalIngredientsList2.pickle"))
+
     print(ga.create_inspiring_set_ingredients())
     ga.run()
     print("Percentage of positive mutations: " + str(
         round(ga.positive_mutations * 100, 2)) + "%")
+
+
 
 
 main()
