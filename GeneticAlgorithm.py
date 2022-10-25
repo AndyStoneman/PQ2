@@ -61,6 +61,8 @@ class GeneticAlgorithm:
             list(self.inspiring_set_ingredient_names))
         self.average_recipe_length /= self.num_files
         self.common_list = self.create_common_list()
+        self.inspiring_items = list(
+            self.create_inspiring_set_ingredients().values())
 
     def generate_random(self):
         return random.choice(self.recipes)
@@ -334,18 +336,17 @@ class GeneticAlgorithm:
         """
         personal_items = self.load_recipe_list_from_file(
             "personalIngredientsList.pickle")
-        inspiring_items = list(
-            self.create_inspiring_set_ingredients().values())
 
         all_items = personal_items.ingredients
 
-        for it in inspiring_items:
+        for it in self.inspiring_items:
             all_items.append(it)
         new_ingredient = random.choice(all_items)
         ingredient_to_remove = random.choice(recipe.ingredients)
 
         count = 0
-        while ingredient_to_remove.get_name() in self.common_list and count == 8:
+        while ingredient_to_remove.get_name() in self.common_list and \
+                count == 8:
             ingredient_to_remove = random.choice(recipe.ingredients)
             if ingredient_to_remove.get_name() not in self.common_list:
                 recipe.remove_ingredient(ingredient_to_remove)
@@ -371,12 +372,11 @@ class GeneticAlgorithm:
         """
         personal_items = self.load_recipe_list_from_file(
             "personalIngredientsList.pickle")
-        inspiring_items = list(
-            self.create_inspiring_set_ingredients().values())
+
 
         all_items = personal_items.ingredients
 
-        for it in inspiring_items:
+        for it in self.inspiring_items:
             all_items.append(it)
 
         new_ingredient = random.choice(all_items)
@@ -399,31 +399,6 @@ class GeneticAlgorithm:
             del_ingredient = random.choice(recipe.ingredients)
 
         recipe.remove_ingredient(del_ingredient)
-
-    def normalize_ingredient_quantities(self, recipe, amt=100.0):
-        """
-        Normalizes ingredient quantities in a recipe to a specified amount.
-
-        Args:
-             recipe (Recipe): The recipe that is having one of its ingredients
-             mutated.
-
-             amt (int): The total amount the recipes should be normalized to.
-             Defaulted to 100.
-        """
-        total_oz = 0
-        for ingredient in recipe.ingredients:
-            total_oz += ingredient.get_amount()
-
-        ratio = amt / total_oz
-        normalized_total = 0
-        for ingredient in recipe.ingredients[:-1]:
-            curr_amt = ingredient.get_amount()
-            ingredient.set_amount(curr_amt * ratio)
-            normalized_total += ingredient.get_amount()
-        remainder = amt - normalized_total
-        recipe.ingredients[-1].set_amount(remainder)
-        normalized_total += remainder
 
     def save_recipe_to_file(self, recipe_list, file):
         """
@@ -460,10 +435,9 @@ def main():
     ga = GeneticAlgorithm(50, "recipes/" + "*.txt")
 
     print(ga.create_inspiring_set_ingredients())
-    print(ga.create_common_list())
     ga.run()
-    #print("Percentage of positive mutations: " + str(
-        #round(ga.positive_mutations * 100, 2)) + "%")
+    print("Percentage of positive mutations: " + str(
+        round(ga.positive_mutations * 100, 2)) + "%")
 
 
 main()
