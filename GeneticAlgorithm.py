@@ -1,8 +1,8 @@
 import glob
 import random
-from Recipe import Recipe
-from Ingredient import Ingredient
-from PersonalIngredientParser import PersonalIngredientParser
+from recipe import Recipe
+from ingredient import Ingredient
+from personal_ingredient_parser import PersonalIngredientParser
 import pickle
 
 
@@ -336,7 +336,7 @@ class GeneticAlgorithm:
         
         """
         personal_items = self.load_recipe_list_from_file(
-            "personalIngredientsList2.pickle")
+            "personal_ingredients_list.pickle")
 
         all_items = personal_items.ingredients
 
@@ -372,7 +372,7 @@ class GeneticAlgorithm:
              ingredients.
         """
         personal_items = self.load_recipe_list_from_file(
-            "personalIngredientsList2.pickle")
+            "personal_ingredients_list.pickle")
 
 
         all_items = personal_items.ingredients
@@ -406,6 +406,16 @@ class GeneticAlgorithm:
         Saves a list of recipes to a file (allows us to save inspiring set)
         Inspired by https://stackoverflow.com/questions/20716812/saving-and-
         loading-multiple-objects-in-pickle-file
+
+        param recipe_list: list of Ingredient objects that make the "recipe"
+        param file: file where it gets saved to 
+
+
+        An example of how this code was run:
+        personalIngredients = \
+            PersonalIngredientParser("personalIngredients.csv")
+        ga.save_recipe_to_file(personalIngredients, \
+            "personal_ingredients_list.pickle" )
         """
         with open(file, 'wb') as f:
             pickle.dump(recipe_list, f)
@@ -415,6 +425,8 @@ class GeneticAlgorithm:
         Loads a recipe list from file using pickle.
         Also inspired by https://stackoverflow.com/questions/20716812/saving-
         and-loading-multiple-objects-in-pickle-file.
+
+        param filename: file to be opened 
         """
         with open(filename, "rb") as f:
             recipe_list = pickle.load(f)
@@ -434,13 +446,6 @@ class GeneticAlgorithm:
 
 def main():
     ga = GeneticAlgorithm(50, "recipes/" + "*.txt")
-
-    personalIngredients = PersonalIngredientParser("personalIngredients.csv")
-    ga.save_recipe_to_file(personalIngredients, "personalIngredientsList2.pickle" )
-
-    print("PERSONAL",ga.load_recipe_list_from_file("personalIngredientsList2.pickle"))
-
-    print(ga.create_inspiring_set_ingredients())
     ga.run()
     print("Percentage of positive mutations: " + str(
         round(ga.positive_mutations * 100, 2)) + "%")

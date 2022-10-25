@@ -1,4 +1,4 @@
-from Ingredient import Ingredient
+from ingredient import Ingredient
 import pickle
 
 class Recipe:
@@ -127,7 +127,7 @@ class Recipe:
                 common_set_appearances += 1
 
         required_ingredients = common_set_appearances / (len(common_list))
-        file = "personalIngredientsList2.pickle"
+        file = "personal_ingredients_list.pickle"
 
         special_count = 0
         with open(file, "rb") as f:
