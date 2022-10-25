@@ -1,8 +1,14 @@
 from Ingredient import Ingredient
-
+"""
+Creates a Group Ingredient class with name, amount, unit, and score properties.
+"""
 
 class GroupIngredients:
     def __init__(self, filename):
+        """
+        Creates group ingreident object. 
+        Seperate from the Ingredient class because we wanted to add the "score" parameter.   
+        """
         self.filename = filename
         self.ingredients = []
         self.ingredient_names = []
@@ -32,12 +38,18 @@ class GroupIngredients:
             ingredient[i] = ingredient[i].lower()
 
         # amount, unit, name, score
-        # 0, 1, 2, 3,
+        # 0, 1, 2, 3
         ingred_obj = Ingredient(str(ingredient[2]), float(ingredient[0]),
                                 str(ingredient[1]), float(ingredient[3]))
         return ingred_obj
 
     def get_name(self):
+        """
+        Getter method for the name of a personal ingredient.
+
+        Returns:
+            The recipe name.
+        """
         return self.name
 
     def __str__(self):
