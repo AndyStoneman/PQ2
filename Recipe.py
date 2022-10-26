@@ -1,4 +1,4 @@
-from Ingredient import Ingredient
+from ingredient import Ingredient
 import pickle
 
 class Recipe:
