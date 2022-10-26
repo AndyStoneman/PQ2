@@ -1,7 +1,7 @@
 import glob
 import random
-from recipe import Recipe
-from ingredient import Ingredient
+from Recipe import Recipe
+from Ingredient import Ingredient
 from personal_ingredient_parser import PersonalIngredientParser
 import pickle
 
