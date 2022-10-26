@@ -1,6 +1,0 @@
-1,cup,unsalted butter
-0.66,cup,granulated sugar
-1.5,tsp,pure vanilla extract
-0.5,tsp,salt
-2,cups,all-purpose flour
-0.25,cups,cornstarch

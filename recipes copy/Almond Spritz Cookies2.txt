@@ -1,7 +1,0 @@
-1,cup,unsalted butter
-0.75,cup,granulated sugar
-1,large,egg
-0.75,tsp,almond extract
-0.5,tsp,fine sea salt
-2,cups,flour
-0.25,cup,almond flour

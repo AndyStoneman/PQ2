@@ -1,8 +1,0 @@
-1,cups,sugar
-0.5,cups,butter
-1,large,egg
-1,cups,smooth peanut butter
-1,tsp,vanilla
-0.5,tsp,salt
-0.5,tsp,baking soda
-1.5,cups,flour

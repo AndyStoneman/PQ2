@@ -1,9 +1,0 @@
-1,cup,butter
-2.25,cups,powdered sugar
-0.50,tsp,salt
-1,large,egg
-1,tsp,vanilla extract
-0.50,tsp,almond extract
-2.50,cups,all-purpose flour
-2,cups,chocolate chips
-2.50,tbsp,water

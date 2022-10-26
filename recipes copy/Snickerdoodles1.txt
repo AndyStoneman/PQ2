@@ -1,8 +1,0 @@
-0.5,cup,unsalted butter
-8,tbsp,sugar
-1,large,egg
-0.5,tsp,vanilla extract
-1.5,cup,all-purpose flour
-0.25,tsp,baking soda
-0.25,tsp,cream of tartar
-1,tsp,ground cinnamon

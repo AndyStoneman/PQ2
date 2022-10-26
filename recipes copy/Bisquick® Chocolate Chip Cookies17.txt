@@ -1,6 +1,0 @@
-0.50,cup,butter
-1,cup,packed brown sugar
-1,tsp,vanilla
-1,medium,egg
-2,cups,Bisquick Heart Smart mix
-1,cup,semisweet chocolate chips

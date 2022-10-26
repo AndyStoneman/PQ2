@@ -1,8 +1,0 @@
-1.50,cups,flour 
-0.75,cup,unsweetened natural cocoa powder 
-1,tsp,baking powder
-0.125,tsp,salt 
-0.75,cup,unsalted butter
-1,cup,granulated sugar
-1,large,egg 
-1,tsp,pure vanilla extract 

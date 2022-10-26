@@ -1,9 +1,0 @@
-0.3333,cup,vegetable shortening
-0.5,cup,granulated sugar
-0.5,cup,packed light brown sugar packed
-1,egg,large
-1,tsp,pure vanilla extract
-0.75,cup,peanut butter
-1.5,cup,all-purpose flour
-1,tsp,baking soda
-0.5,tsp,salt
