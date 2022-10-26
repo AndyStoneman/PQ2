@@ -8,6 +8,7 @@ to generate their own personal ingredient lists, although the resulting file
 will have to be replaced in the Genetic Algorithm code.
 """
 
+
 class PersonalIngredientParser:
     def __init__(self, filename):
         """

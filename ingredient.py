@@ -3,6 +3,8 @@ Creates an Ingredient class with name, amount, and unit properties. Ingredients 
 the ingredients found in a cookie recipe. It is the basic unit of a recipe, all mutations
 are done by adding, subtracting, or swapping ingredients within recipe objects. 
 """
+
+
 class Ingredient:
     def __init__(self, name, amount, unit, score=1):
         """
