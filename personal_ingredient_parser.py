@@ -1,4 +1,4 @@
-from ingredient import Ingredient
+from Ingredient import Ingredient
 """
 PersonalIngredientParser was used to parse a csv of personal ingredients and 
 their respective ratings. After originally parsing the file, 
